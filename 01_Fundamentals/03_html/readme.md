@@ -275,14 +275,58 @@ Resulteert in:
 
 
 1. Wat is HTML?
+HTML = Hypertext Markup Language (Skelet van je website)
+
 2. Hoe ziet de basis-structuur van HTML eruit?
+!DOCTYPE HTML
+    html
+        head
+            meta data
+            style ref
+        /head
+        body
+            inhoud
+
+            <script></script> loadspeed
+        /body
+    /html
+
 3. Wat is een anchor tag?
+Een anchor tag is een html element. Anchor tags met een href zorgen er voor dat je naar een bepaalde plek (andere site, zelfde site email ect.)
+    kan verwijzen.
+
 4. Noem een aantal nieuwe functionaliteiten van HTML5
+    1.  video and audio tags
+    2.  nav tag
+    3.  header
+    4.  canvas
+    5.  footer
+    6.  new inputs (ContentEditable, Progress, section & main)
+    7.  figure and figcaption
+    8.  placeholders
+    9.  required attribute
+    10. preload videos
+    source: https://www.admecindia.co.in/web-design/10-new-features-html5-examples/
+
 5. Wat zijn HTML attributen?
+HTML attributen zijn aanvullende waarden die HTML elementen kunnen configureren/veranderen (bv. class of id).
+    source: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#attribute_list 
+
 6. Wat is HTML semantics?
+HTML semantics zijn div met een speciale naam. (bv. <aside> <section> of <nav>) Deze namen(elementen) helpen bij SEO(search engine optimization).
+
 7. Waarvoor worden meta tags gebruikt?
+Meta tags geven info en instructies aan de programma's en machine die je pagina lezen.
+
 8. Wat is een nested element?
+Een nested element is een element dat binnen een ander element wordt geplaatst.
+
 9. Wat is het verschil tussen inline- en blok-elementen?
+Blok-element neemt de hele horizontale lijn van je website in beslag.
+Denk maar aan heading levels 1-6 (<h1>, <h2>, <h3> ect).
+Inline-element meerdere elementen kunnen op een horizontale lijn gaan.
+Denk maar aan anchor tags (<a>).
+
 10. Wat is accessibility?
 
 <br>
@@ -295,7 +339,7 @@ Resulteert in:
 
 ![alt_text](images/image8.png)
 
-1. Creëer nu voor elk onderdeel een header en een bijbehorende stuk tekst en zorg ervoor dat door te klikken op de links in de navigatiebalk je gerefereerd wordt naar het bijbehorende onderdeel. Zie hieronder een voorbeeld: 
+2. Creëer nu voor elk onderdeel een header en een bijbehorende stuk tekst en zorg ervoor dat door te klikken op de links in de navigatiebalk je gerefereerd wordt naar het bijbehorende onderdeel. Zie hieronder een voorbeeld: 
 
 ![alt_text](images/image9.gif)
 
