@@ -1,16 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-*{
-    box-sizing: border-box;
+.background{
+    background-color: rgb(248, 248, 156);
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
-body{
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+.number-1 {
+    background-color: rgb(156, 192, 156);
+    padding: 50px;
+    margin: 20px 20px;
+    font-size: 40px;
+   
+}
+.number-2 {
+    background-color: rgb(156, 192, 156);
+    padding: 50px;
+    margin: 20px 20px;
+    font-size: 40px;
+    flex-grow: 6;
+
+}
+.number-3 {
+    background-color: rgb(156, 192, 156);
+    padding: 50px;
+    margin: 20px 20px;
+    font-size: 40px;
+}
+.number-4 {
+    background-color: rgb(156, 192, 156);
+    padding: 50px;
+    margin: 20px 20px;
+    font-size: 40px;
+}
+.number-5 {
+    background-color: rgb(156, 192, 156);
+    padding: 50px;
+    margin: 20px 20px;
+    font-size: 40px;
+}
+.number-6 {
+    background-color: rgb(156, 192, 156);
+    padding: 50px;
+    margin: 20px 20px;
+    font-size: 40px;
 }
