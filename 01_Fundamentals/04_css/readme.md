@@ -419,6 +419,40 @@ In de officiële documentatie kun je meer informatie terugvinden over pseudo ele
 
 Er zijn 14 verschillende pseudo-elementen. Beschrijf ze alle 14 kort en maak voor elk een voorbeeld
 
+::after = 
+div::after {
+}
+
+::backdrop =
+div::backdrop{
+}
+
+::before =
+div::before{
+}
+
+::cue =
+div::cue{
+}
+
+::cue-region =
+div::cue-region{  
+}
+
+::first-letter =
+div::first-letter{
+}
+
+::first-line =
+div::first-line {
+}
+
+::file-selecttor-button =
+div::file-selecttor-button {
+}
+
+
+
 <br>
 
 ### **Opdracht 2**
