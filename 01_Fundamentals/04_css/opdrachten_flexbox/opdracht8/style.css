@@ -1,16 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-*{
-    box-sizing: border-box;
+.background{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 320px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 40px;
 }
 
-body{
-    font-family: "Roboto", sans-serif;
+.number-1 {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+    background-color: rgb(255,255,255);
+    border: solid 1px;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    
+}
+.number-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color: rgb(124, 173, 192);
+    border: solid 1px;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;   
+}
+.number-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(70, 197, 148);
+    border: solid 1px;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;  
+}
+.number-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;  
+}
+.number-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: solid 1px;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;  
+}
+.number-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left, #fff 0%, #6d597a 100%);
+    border: solid 1px;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
 }
