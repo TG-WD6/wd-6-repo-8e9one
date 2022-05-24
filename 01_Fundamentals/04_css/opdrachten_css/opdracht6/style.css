@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/* universal */
+* {
+    color: darkgreen;
+}
+/* attribute */
+h1 {
+    color: blue;
+}
+
+/* child */
+
+/* adjacent sibling */
+
+/* general sibling */

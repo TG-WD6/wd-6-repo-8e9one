@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    margin: 10px;
+}
+
+p{
+    background-color: green;
+    border: 1px solid #000;
+    
+}
+.num1  {
+    margin-top: 0px;
+}
+.num2 {
+    margin-bottom: 0px;
+}
+
+span {
+    background-color: #fff;
+}
+
+.light-green {
+    background-color: lightgreen;
+}

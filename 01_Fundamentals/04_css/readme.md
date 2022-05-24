@@ -72,11 +72,25 @@ Lees meer over selectors in de officiele documentatie van [MDN](https://develope
 
 Je kunt op 3 verschillende manieren CSS in je HTML inladen. Op welke 3 manieren kun je dat doen? Leg ook voor elke wijze uit wat het precies inhoud.
 
+inline Css: Je schrijft je css code binnen je html tag binnen een <style> tag.
+internal Css: Je schrijft je css code binnen de head tag.
+maak een <style> tag binnen je head en daar in schrijf je je css code.
+external Css: Je schrijft je css code binnen een andere bestand (style.css) maakt een ref binnen je head tag naar die bestand.
+
 <br>
 
 ### **Opdracht 2**
 
 CSS pas je toe met een bepaalde syntax. Hoe ziet zo'n syntax eruit? Kun je ook uitleggen wat elk element uit de syntax betekent?
+
+h1 {color:blue;}
+h1= selector
+color= property
+blue= value
+
+selector = wijst naar welke html element je wil beinvloeden.
+property = wijst naar welke eigenschap je wil veranderen.
+value = wijst naar waarde van die eigenschap.
 
 <br>
 
@@ -90,6 +104,20 @@ Er zijn verschillende selectors, bijvoorbeeld;
 * descendant selectors
 
 Maak van de bovengenoemde selectors voorbeelden. Geef in je antwoord ook aan wat de voordelen zijn van elke selector.
+
+type selectors:
+
+
+class selectors: .this-is-a-class (.thingy {})
+Een class selector is iets specifieker dan een type.
+meerdere html elementen kunnen een class hebben.
+
+ID selectors: #this-is-a-ID (#thingy {})
+Een ID selector is specifiek.
+Een! ID selector behoort tot een html element.
+
+descendant selectors: this-is-a descentant ( ul li {})
+Een descendant selector is selector dat beinvloed alle descendant van een parent element (ul= parent en li =descendant)
 
 <br>
 
@@ -175,6 +203,7 @@ Alles in CSS heeft een zogenaamde ‘box’ eromheen en het begrijpen van deze �
 
 Wat zijn de eigenschappen van block boxes en inline boxes?
 
+
 <br>
 
 ### **Opdracht 2**
@@ -199,17 +228,34 @@ Hieronder zie je een box-model:
 
 Leg uit wat de volgende termen betekenen: content, padding, margin en border.
 
+content: Hier komt je content te staan.
+padding: Spatie tussen je content en je border
+margin: Buitenste deel van je block, spatie buiten je border.
+border: Lijn tussen je padding en margin (solid,)
+
 <br>
 
 ### **Opdracht 5**
 
 Als je ruimte wilt maken tussen de border en content, welke css property gebruik je dan? Maak een voorbeeld in je antwoord. 
 
+Padding.
+
+.thingy {
+  padding: 10^99px;
+}
+
 <br>
 
 ### **Opdracht 6**
 
 Als je ruimte wilt maken tussen de border en buiten de box, welke css property gebruik je dan? Maak een voorbeeld in je antwoord.
+
+Margin.
+
+.thingy {
+  margin: 10^99px;
+}
 
 <br>
 
@@ -220,16 +266,21 @@ Maak nu een blok met width: 100px, height: 100px, margin: 5px, padding 5px en bo
 ![alt_text](images/image25.png)
 
 1. Hoe breed is de box?
+115px  (100px + 5px + 5px + 5px)
 
 2. Hoe hoog is de box?
+115px  (100px + 5px + 5px + 5px)
 
 3. Wat merk je op met width en height?
+--
 
 <br>
 
 ### **Opdracht 8**
 
 Welke CSS property kun je gebruiken om ervoor te zorgen dat de waarde van width en height de totale breedte en hoogte is van het blok van de voorgaande opdracht?
+
+100% (height:100%)
 
 <br>
 
@@ -246,6 +297,12 @@ De CSS ‘position’ property bepaalt hoe een HTML element in een document word
 ### **Opdracht 1**
 
 De belangrijkste waardes van “position” zijn static, relative, absolute, fixed & sticky. Leg voor elke uit wat ze doen.
+
+static:
+relative:
+absolute:
+fixed:
+sticky:
 
 <br>
 

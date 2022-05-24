@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.parent {
+    position: absolute;
+    background-color: blue;
+    width: 1000px;
+    z-index: -100;
+}
+
+.background-img {
+    background: url('https://images.unsplash.com/photo-1433162653888-a571db5ccccf?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170') no-repeat;
+    z-index: 1;
+    height: 600px;
+    width: 90%;
+    position: relative;
+}
+
+.behind-img{
+    position: relative;
+    z-index: -10;
+    width: 95%;
+    background-color: yellow;
+    bottom: 400px;
+}
+
+.infront-img {
+    position: relative;
+    z-index: 10;
+    bottom: 400px;
+}
+
+.brr {
+    font-size: 60px;
+    font-weight: bold;
+    background-color: yellow;
+    width: 80%;
+}
+
+.super {
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 40%;
+}

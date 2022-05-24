@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.outside {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+}
+.inside {
+    background-color: yellow;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+}
