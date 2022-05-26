@@ -14,3 +14,14 @@ body{
     overflow: hidden;
     margin: 0;
 }
+
+.transition-text {
+    transition: color 0.4s, background-color 0.4s, ease-in;
+    background-color: yellow;
+}
+
+.transition-text:hover {
+    background-color: black;
+    color: yellow;
+    border-radius: 10%;
+}
