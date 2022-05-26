@@ -594,6 +594,8 @@ Voor deze opdrachten ga je template code gebruiken; deze kan je vinden onder opd
 
 Bij CSS Grid wordt vaak gebruikgemaakt van een speciale lengte-eenheid: “**fr**”. Onderzoek wat deze doet en beschrijf het in je eigen woorden.
 
+fr = "fraction" : fr is een gedeelte van de beschickbaar ruimte binnen je grid container.
+
 <br>
 
 ### **Opdracht 2**
