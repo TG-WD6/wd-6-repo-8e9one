@@ -10,12 +10,11 @@
 
 }
 
- .container div{
+ .container .box1, .container .box2, .container .box3{
     display: flex;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: 450px;
+    top: 200px;
     justify-content: center;
     align-items: center;
     height: 50px;
@@ -24,40 +23,190 @@
  
 }
 
-.container:hover .box1 {
-    transition-duration: 1000ms;
-    transform: translateX(450px) translateY(-250px);
-    transition-timing-function: ease-in-out;
+.box1 {
+    animation: x-axis-box1 2s linear forwards;
 }
-.box1  {
-    transition-duration: 1000ms;
-    transition-timing-function: ease-in-out;
-
+.wrapper1 {
+    animation: y-axis-box1 2s linear forwards;
 }
-
-
-
-.container:hover .box2 {
-    transition-duration: 1000ms;
-    transform: translateX(-500px) translateY(-250px);
-    transition-timing-function: ease-in-out;
-
+.container:hover .box1{
+    animation: x-axis-box1-reverse 2s linear forwards;
+}
+.container:hover .wrapper1{
+    animation: y-axis-box1-reverse 2s linear forwards;
 }
 
 .box2 {
-    transition-duration: 1000ms;
-    transition-timing-function: ease-in-out;
+    animation: x-axis-box2 2s linear forwards;
 }
-
-.container:hover .box3{
-    transition-duration: 1000ms;
-    transition-delay: 500ms;
-    transform: translateX(-500px) translateY(200px);
-    
+.wrapper2 {
+    animation: y-axis-box2 2s linear forwards;
+}
+.container:hover .box2  {
+    animation: x-axis-box2-reverse 2s linear forwards;
+}
+.container:hover .wrapper2{
+    animation: y-axis-box2-reverse 2s linear forwards;
 }
 
 .box3 {
-    transition-duration: 1000ms;
-    transition-delay: 500ms;
-    transition-timing-function: ease-in-out;
+    animation: x-axis-box3 linear forwards 2s;
+}
+.wrapper3 {
+    animation: y-axis-box3 linear forwards 2s;
+}
+
+.container:hover .box3 {
+    animation: x-axis-box3-reverse linear forwards 2s;
+}
+.container:hover .wrapper3 {
+    animation: y-axis-box3-reverse linear forwards 2s;
+}
+
+
+@keyframes x-axis-box1 {
+    0%{
+        transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(250px);
+    }
+    100%{
+        transform: translateX(500px);
+    }
+}
+@keyframes y-axis-box1 {
+    0%{
+        transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    75% {
+      transform: translateY(-75px);
+    }
+    100%{
+      transform: translateY(-200px);
+    }
+}
+@keyframes x-axis-box1-reverse {
+    0%{
+        transform: translateX(500px);
+    }
+    50% {
+      transform: translateX(250px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes y-axis-box1-reverse {
+    0%{
+        transform: translateY(-200px);
+    }
+    50% {
+      transform: translateY(-175px);
+    }
+    75% {
+      transform: translateY(-150px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+}
+@keyframes x-axis-box2 {
+    0%{
+        transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(-250px);
+    }
+    100%{
+        transform: translateX(-450px);
+    }
+}
+@keyframes y-axis-box2 {
+    0%{
+        transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    75% {
+      transform: translateY(-75px);
+    }
+    100%{
+      transform: translateY(-200px);
+    }
+}
+@keyframes x-axis-box2-reverse {
+    0%{
+        transform: translateX(-450px);
+    }
+    50% {
+      transform: translateX(-250px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes y-axis-box2-reverse {
+    0%{
+        transform: translateY(-200px);
+    }
+    50% {
+      transform: translateY(-175px);
+    }
+    75% {
+      transform: translateY(-150px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+}
+
+@keyframes x-axis-box3 {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-450px);
+    }
+    100%  {
+        transform: translateX(-450px);
+    }
+}
+@keyframes y-axis-box3 {
+    0%{
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100%  {
+        transform: translateY(250px);
+    }
+}
+@keyframes x-axis-box3-reverse {
+    0% {
+        transform: translateX(-450px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+
+}
+@keyframes y-axis-box3-reverse {
+    0% {
+        transform: translateY(250px);
+    }
+    50% {
+        transform: translateY(250px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
