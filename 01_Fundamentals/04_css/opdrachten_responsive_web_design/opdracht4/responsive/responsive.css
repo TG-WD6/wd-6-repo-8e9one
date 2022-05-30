@@ -94,3 +94,9 @@ nav a {
   bottom: 2px;
 }
 
+@media (max-resolution: 150dpi) and (max-width: 480px){
+  .page-description {
+    font-size: 20px;
+  }
+}
+

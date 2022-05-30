@@ -94,3 +94,25 @@ nav a {
   bottom: 2px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px), (orientation: landscape) {
+  .page-title.page-description {
+    display: flex;
+
+    /* display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 1/1;
+    grid-row: 1/2;
+     */
+  }
+  .gallery {
+    display: flex;
+    /* display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column: 2/3;
+    grid-row: 1/2;
+     */
+  }
+
+
+}

@@ -94,3 +94,16 @@ nav a {
   bottom: 2px;
 }
 
+@media (min-resolution: 150dpi){
+  .logo {
+    height: 80px;
+    width: 80px;
+    background-image: url("./images/spaceship2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 1em;
+  }
+
+}

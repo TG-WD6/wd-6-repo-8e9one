@@ -94,3 +94,10 @@ nav a {
   bottom: 2px;
 }
 
+
+@media (max-width: 480px) {
+  .page-title {
+    width: 270px;
+  }
+
+}

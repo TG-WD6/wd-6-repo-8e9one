@@ -94,3 +94,9 @@ nav a {
   bottom: 2px;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .gallery-item .thumbnail {
+    width: 95%;
+  }
+}
+
