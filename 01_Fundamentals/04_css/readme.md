@@ -72,17 +72,21 @@ Lees meer over selectors in de officiele documentatie van [MDN](https://develope
 
 Je kunt op 3 verschillende manieren CSS in je HTML inladen. Op welke 3 manieren kun je dat doen? Leg ook voor elke wijze uit wat het precies inhoud.
 
+<<<<<<< HEAD
 inline Css: Je schrijft je css code binnen je html tag binnen een <style> tag.
 internal Css: Je schrijft je css code binnen de head tag.
 maak een <style> tag binnen je head en daar in schrijf je je css code.
 external Css: Je schrijft je css code binnen een andere bestand (style.css) maakt een ref binnen je head tag naar die bestand.
 
+=======
+>>>>>>> template/main
 <br>
 
 ### **Opdracht 2**
 
 CSS pas je toe met een bepaalde syntax. Hoe ziet zo'n syntax eruit? Kun je ook uitleggen wat elk element uit de syntax betekent?
 
+<<<<<<< HEAD
 h1 {color:blue;}
 h1= selector
 color= property
@@ -92,6 +96,8 @@ selector = wijst naar welke html element je wil beinvloeden.
 property = wijst naar welke eigenschap je wil veranderen.
 value = wijst naar waarde van die eigenschap.
 
+=======
+>>>>>>> template/main
 <br>
 
 ### **Opdracht 3**
@@ -105,6 +111,7 @@ Er zijn verschillende selectors, bijvoorbeeld;
 
 Maak van de bovengenoemde selectors voorbeelden. Geef in je antwoord ook aan wat de voordelen zijn van elke selector.
 
+<<<<<<< HEAD
 type selectors:
 
 
@@ -119,6 +126,8 @@ Een! ID selector behoort tot een html element.
 descendant selectors: this-is-a descentant ( ul li {})
 Een descendant selector is selector dat beinvloed alle descendant van een parent element (ul= parent en li =descendant)
 
+=======
+>>>>>>> template/main
 <br>
 
 ### **Opdracht 4**
@@ -156,7 +165,11 @@ Verder heb je ook nog de volgende selectors:
 * adjacent sibling selectors
 * general sibling selectors
 
+<<<<<<< HEAD
 Maak een .html file waar je alledrie in gebruikt
+=======
+Maak een .html file waar je alle vijf in gebruikt
+>>>>>>> template/main
 
 <br>
 
@@ -202,7 +215,6 @@ Alles in CSS heeft een zogenaamde ‘box’ eromheen en het begrijpen van deze �
 ### **Opdracht 1**
 
 Wat zijn de eigenschappen van block boxes en inline boxes?
-
 
 <br>
 

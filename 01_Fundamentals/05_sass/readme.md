@@ -228,6 +228,7 @@ De ‘&’ is een ontzettend handige feature in SASS. Je gebruikt het bij het ne
 
 <br>
 
+
 # **3 Partials and Modules**
 
 Binnen Sass kunnen we partials, een afkorting voor partial files, aanmaken. Dit zijn korte Sass codes die we aanmaken om te hergebruiken in andere onderdelen van onze projecten. Zodra de developer gebruik wil maken van styling die hergebruikt kan worden voor andere onderdelen van een website is het altijd een goed idee om hier een partial van te maken. Enkele voorbeelden zijn styling voor: buttons, teksten en foto's. Op de TechGrounds website maken wij hier gebruik van voor de buttons en header styling. Wij willen een uniforme styling voor deze onderdelen zodat de website netjes blijft. Ook is een groot voordeel hiervan dat we de styling maar op één plek hoeven aan te passen zodat het direct ook aangepast wordt op de andere onderdelen van de website. Om juist gebruik te maken van partials plaatsen we een map genaamd 'styling' in de assets of resources map. Deze map maak je als developer vaak aan om verschillende mappen zoals images en fonts in te plaatsen. In de styling map maken wij een bestand aan dat **altijd** begint met een lage streepje _ . We importeren dit bestand als volgt:
