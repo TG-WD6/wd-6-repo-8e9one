@@ -1,0 +1,10 @@
+@import '_colors.scss';
+
+body {
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+
+li {
+    list-style-type: none;
+}
