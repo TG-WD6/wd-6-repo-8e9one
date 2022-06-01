@@ -1,0 +1,17 @@
+@import '_colors.scss';
+
+.add,
+.basket {
+    background-color: $button-color;
+    width: 30px;
+    height: 30px;
+    color: #000;
+    border: 0px;
+    padding: 0;
+    margin: 0;
+
+    &:hover {
+        background-color: $button-hover-color;
+
+    }
+}

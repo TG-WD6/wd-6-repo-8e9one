@@ -1,0 +1,14 @@
+.colorChangingSquare {
+  background-color: blue;
+  color: #000;
+  height: 200px;
+  width: 200px;
+}
+
+.colorChangingSquare:hover {
+  background-color: red;
+  color: #f0f0f0;
+  -webkit-transition: background-color 1000ms ease-in;
+  transition: background-color 1000ms ease-in;
+}
+/*# sourceMappingURL=style.css.map */

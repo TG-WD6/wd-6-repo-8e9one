@@ -1,0 +1,39 @@
+@import '_button.scss', '_colors.scss', '_images.scss';
+
+body {
+    background-color: $primary-color;
+}
+
+p {
+    color: $secondary-color;
+
+}
+
+.est-bezorg-tijd {
+    color: $est-tijd;
+}
+
+.prijs {
+    color: $prijs-color;
+    font-weight: 1000;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    margin: 20px;
+    border: 1px solid;
+
+}
+
+.product-beschrijving {
+    margin-left: 10px;
+}
+
+
+.afbeelding-product {
+    height: $image-height;
+    width: $image-width;
+    background-color: lightgrey;
+}

@@ -1,0 +1,19 @@
+@import '_button.scss', '_colors.scss';
+
+body {
+    background-color: $primary-color;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 100vw;
+}
+
+
+li {
+    list-style: none;
+    color: $secondary-color;
+}

@@ -1,0 +1,55 @@
+.add,
+.basket {
+  background-color: yellow;
+  width: 30px;
+  height: 30px;
+  color: #000;
+  border: 0px;
+  padding: 0;
+  margin: 0;
+}
+
+.add:hover,
+.basket:hover {
+  background-color: khaki;
+}
+
+body {
+  background-color: white;
+}
+
+p {
+  color: grey;
+}
+
+.est-bezorg-tijd {
+  color: limegreen;
+}
+
+.prijs {
+  color: red;
+  font-weight: 1000;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 200px;
+  margin: 20px;
+  border: 1px solid;
+}
+
+.product-beschrijving {
+  margin-left: 10px;
+}
+
+.afbeelding-product {
+  height: 200px;
+  width: 200px;
+  background-color: lightgrey;
+}
+/*# sourceMappingURL=style.css.map */
