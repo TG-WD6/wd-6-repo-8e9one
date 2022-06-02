@@ -22,18 +22,30 @@ p {
     display: flex;
     justify-content: space-between;
     height: 200px;
-    margin: 20px;
-    border: 1px solid;
-
+    width: 80%;
+    margin: 0 auto;
 }
 
 .product-beschrijving {
     margin-left: 10px;
+    padding: 40px 0;
 }
 
 
 .afbeelding-product {
     height: $image-height;
     width: $image-width;
+    margin: auto 0;
     background-color: lightgrey;
+}
+
+.winkel-wagen {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.winkel-wagen span,
+.winkel-wagen div {
+    margin: 5px;
 }

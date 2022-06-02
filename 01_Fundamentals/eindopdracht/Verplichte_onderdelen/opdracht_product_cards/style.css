@@ -39,17 +39,35 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 200px;
-  margin: 20px;
-  border: 1px solid;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .product-beschrijving {
   margin-left: 10px;
+  padding: 40px 0;
 }
 
 .afbeelding-product {
-  height: 200px;
-  width: 200px;
+  height: 165px;
+  width: 165px;
+  margin: auto 0;
   background-color: lightgrey;
+}
+
+.winkel-wagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 0;
+}
+
+.winkel-wagen span,
+.winkel-wagen div {
+  margin: 5px;
 }
 /*# sourceMappingURL=style.css.map */

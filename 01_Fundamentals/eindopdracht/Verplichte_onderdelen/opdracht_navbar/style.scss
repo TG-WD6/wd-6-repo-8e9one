@@ -1,10 +1,113 @@
 @import '_colors.scss';
 
-body {
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $secondary-color;
+    padding: 10px;
+
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.container {
+    display: none;
+    cursor: pointer;
+    height: 100%;
+    width: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #00BAF0;
+
+}
+
+#toggle-menu {
+    display: none;
+}
+
+#toggle-menu:checked+.container .menu-button {
     background-color: $primary-color;
-    color: $secondary-color;
+}
+
+#toggle-menu:checked+.container .menu-button::before {
+    margin-top: 0;
+    transform: rotate(405deg);
+}
+
+#toggle-menu:checked+.container .menu-button::after {
+    margin-top: 0;
+    transform: rotate(-405deg);
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    transition: transform 500ms cubic-bezier(0.23, 1, 0.32, );
+    border-radius: 5px;
+
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -10px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 10px;
 }
 
 li {
     list-style-type: none;
+    font-size: 30px;
+    overflow: hidden;
+
+    i,
+    a {
+        color: $primary-color;
+        list-style: none;
+        text-decoration: none;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        display: flex;
+    }
+
+    .menu-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 50px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+    }
+
+    #toggle-menu~.menu-bar li {
+        width: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: width 500ms linear;
+
+    }
+
+
 }
