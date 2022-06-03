@@ -28,8 +28,8 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 10px auto;
-  padding: 10px;
+  margin: 1em auto;
+  padding: 1em;
 }
 
 footer > * {
@@ -39,7 +39,7 @@ footer > * {
 }
 
 .info-winkels {
-  margin-top: 10px;
+  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,8 +49,8 @@ footer > * {
 
 .info-winkels h3,
 .info-winkels ul {
-  margin: 0 100px 10px 0;
-  padding-left: 0;
+  margin: 0 6.25em 0 0;
+  padding: 0;
 }
 
 .info-winkels h3 li,
@@ -68,6 +68,6 @@ footer > * {
 }
 
 .social-media {
-  margin-top: 10px;
+  margin-top: 1em;
 }
 /*# sourceMappingURL=style.css.map */

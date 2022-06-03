@@ -1,12 +1,49 @@
 @import '_button.scss', '_colors.scss', '_images.scss';
 
-body {
-    background-color: $primary-color;
-}
-
 p {
     color: $secondary-color;
+}
 
+.product {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+
+    .product>*:nth-child(1) {
+        flex: 1 1 25%;
+        min-width: 10.3125em;
+    }
+
+    .product>*:nth-child(2) {
+        flex: 1 1 50%;
+    }
+
+    .product>*:nth-child(3) {
+        flex: 1 1 25%;
+
+    }
+}
+
+.afbeelding-product {
+    height: $image-height;
+    width: $image-width;
+    margin: auto 0;
+}
+
+.product-beschrijving {
+    margin: 0 2.5em;
+    padding: 2.5em 0;
+}
+
+.winkel-wagen {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em 0;
+}
+
+.winkel-wagen span,
+.winkel-wagen div {
+    margin: 0.3125em;
 }
 
 .est-bezorg-tijd {
@@ -18,34 +55,35 @@ p {
     font-weight: 1000;
 }
 
-.product {
-    display: flex;
-    justify-content: space-between;
-    height: 200px;
-    width: 80%;
-    margin: 0 auto;
-}
+@media (max-width: 700px) {
 
-.product-beschrijving {
-    margin-left: 10px;
-    padding: 40px 0;
-}
+    .product {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .afbeelding-product {
+        height: $image-height;
+        width: $image-width;
+        margin: auto 1em;
+    }
+
+    .product>* {
+        flex: 1 1 165px;
+    }
+
+    .product-beschrijving {
+        margin: 1em;
+        padding: 0 2.5em;
+    }
+
+    .winkel-wagen {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2.5em;
+        margin: 1em;
+    }
 
 
-.afbeelding-product {
-    height: $image-height;
-    width: $image-width;
-    margin: auto 0;
-    background-color: lightgrey;
-}
-
-.winkel-wagen {
-    display: flex;
-    flex-direction: column;
-    padding: 40px 0;
-}
-
-.winkel-wagen span,
-.winkel-wagen div {
-    margin: 5px;
 }
