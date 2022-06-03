@@ -26,14 +26,16 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-  width: 80vw;
-  height: 25vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 10px auto;
   padding: 10px;
+}
+
+footer > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10em;
+          flex: 1 1 10em;
 }
 
 .info-winkels {
@@ -41,11 +43,13 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .info-winkels h3,
 .info-winkels ul {
-  margin: 0 100px 0 0;
+  margin: 0 100px 10px 0;
   padding-left: 0;
 }
 
@@ -55,6 +59,12 @@ footer {
   padding: 0;
   list-style: none;
   color: #d3d3d3;
+}
+
+.info-winkels > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10em;
+          flex: 1 1 10em;
 }
 
 .social-media {

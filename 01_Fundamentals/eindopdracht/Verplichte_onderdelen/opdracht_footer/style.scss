@@ -7,21 +7,24 @@ main {
 
 footer {
     display: flex;
-    justify-content: space-between;
-    position: relative;
-    width: 80vw;
-    height: 25vh;
+    flex-wrap: wrap;
     margin: 10px auto;
     padding: 10px;
 }
 
+footer>* {
+    flex: 1 1 10em;
+}
+
+
 .info-winkels {
     margin-top: 10px;
     display: flex;
+    flex-wrap: wrap;
 
     h3,
     ul {
-        margin: 0 100px 0 0;
+        margin: 0 100px 10px 0;
         padding-left: 0;
 
         li {
@@ -31,6 +34,10 @@ footer {
             color: $secondary-color;
         }
     }
+}
+
+.info-winkels>* {
+    flex: 1 1 10em;
 }
 
 .social-media {
