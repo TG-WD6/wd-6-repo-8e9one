@@ -1,0 +1,47 @@
+@import '_colors.scss';
+
+body {
+    font-family: 'open-sans';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.page {
+    color: $secondary-color;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+        border: 1px solid $button-hover-color;
+    }
+}
+
+
+
+.btn {
+    background-color: $button-color;
+    color: $primary-color;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    margin: .25rem;
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+    &:hover {
+        background-color: $button-hover-color;
+        outline: 0;
+    }
+}

@@ -1,6 +1,26 @@
-@import url(https://fonts.googleapis.com/css?family=Pacifico), '_button.scss', '_colors.scss';
+@import '_button.scss';
 
-body {
-    font-family: 'Pacifico';
-    background-color: $secondary-color;
+.container {
+    font-family: 'open-sans';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    margin: 0;
+
+    &:hover {
+        transform: scale(2);
+    }
+
+}
+
+.search-bar {
+    display: flex;
+    border: 0;
+
+    &:focus {
+        outline: 0;
+    }
+
+
 }

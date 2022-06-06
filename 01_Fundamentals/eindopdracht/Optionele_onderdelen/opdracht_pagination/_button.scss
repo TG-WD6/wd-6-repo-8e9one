@@ -1,11 +1,15 @@
 @import '_colors.scss';
 
-
-
-.search-button {
+.button {
     background-color: $button-color;
     color: $primary-color;
+    width: 33%;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    margin: 2em 0 1em auto;
+    font-size: 1.1rem;
     border: 0;
 
     &:hover {
