@@ -1,0 +1,41 @@
+@import '_button.scss', '_colors.scss';
+
+body {
+    font-family: 'open-sans';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 800px;
+    margin: 0;
+}
+
+.btn {
+    background-color: $beschrijving-color;
+    color: $primary-color;
+    cursor: pointer;
+    width: 100%;
+    padding: 20px;
+    border: 0;
+    transition: 400ms;
+
+
+}
+
+.btn::after {
+    content: '\002B';
+    justify-content: space-between;
+}
+
+.beschrijving {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 200ms ease;
+
+}
+
+.active::after {
+    content: '\2212';
+}
