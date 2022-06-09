@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar</title>
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="logo">
+            <img src="https://techgrounds.nl/wp-content/uploads/2022/05/TG-logo-300x60.png" alt="techgrounds-logo">
+        </div>
+        <div class="menu">
+            <input type="checkbox" id="toggle-menu">
+            <label for="toggle-menu" class="container">
+                <div class="menu-button"></div>
+            </label>
+            <ul class="menu-bar">
+                <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#"><i class="fa fa-heart"></i>Popular</a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i>Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <section class="login">
+        <!-- <img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHNlY3VyaXR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="Login"> -->
+        <div class="container">
+            <h1>Login</h1>
+            <h2>Login with Your Email</h2>
+            <div class="input-tekst">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-tekst">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="remember-forget">
+                <div>
+                    <input type="checkbox" name="remember-me" value="remember-me"> Remember me
+                </div>
+                <div>
+                    <a href="#">Forget Password?</a> <br>
+                </div>
+            </div>
+            <button class="button">LOGIN</button>
+        </div>
+    </section>
+    <section class="product-cards">
+        <div class="container">
+            <div class="product">
+                <!-- <img class="afbeelding-product"
+                    src="https://images.unsplash.com/photo-1627384113743-6bd5a479fffd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZHVjdHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="afbeelding-product"> -->
+                <div class="product-beschrijving">
+                    <small>techground</small>
+                    <h3>techgrounds titel</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem provident eum cum aut animi
+                        exercitationem
+                        impedit debitis rerum deserunt accusamus.</p>
+
+                </div>
+                <div class="winkel-wagen">
+                    <span class="prijs">99,<sup class="prijs-fraction">99</sup></span>
+                    <span class="est-bezorg-tijd">voor 23.59 besteld, morgen in huis</span>
+                    <div>
+                        <button class="add"><i class="fas fa-plus"></i></button>
+                        <button class="basket"><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <!-- <img class="afbeelding-product"
+                    src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="afbeelding-product"> -->
+                <div class="product-beschrijving">
+                    <small>techground</small>
+                    <h3>techgrounds titel</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem provident eum cum aut animi
+                        exercitationem
+                        impedit debitis rerum deserunt accusamus.</p>
+
+                </div>
+                <div class="winkel-wagen">
+                    <span class="prijs">99,<sup class="prijs-fraction">99</sup></span>
+                    <span class="est-bezorg-tijd">voor 23.59 besteld, morgen in huis</span>
+                    <div>
+                        <button class="add"><i class="fas fa-plus"></i></button>
+                        <button class="basket"><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <!-- <img class="afbeelding-product"
+                    src="https://images.unsplash.com/photo-1567721913486-6585f069b332?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZHVjdHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="afbeelding-product"> -->
+                <div class="product-beschrijving">
+                    <small>techground</small>
+                    <h3>techgrounds titel</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem provident eum cum aut animi
+                        exercitationem
+                        impedit debitis rerum deserunt accusamus.</p>
+
+                </div>
+                <div class="winkel-wagen">
+                    <span class="prijs">99,<sup class="prijs-fraction">99</sup></span>
+                    <span class="est-bezorg-tijd">voor 23.59 besteld, morgen in huis</span>
+                    <div>
+                        <button class="add"><i class="fas fa-plus"></i></button>
+                        <button class="basket"><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <footer>
+        <section class="info-winkels">
+            <div class="klantenservice">
+                <h3>Klantenservice</h3>
+                <ul>
+                    <li><a href="#">Contact opnemen</a></li>
+                    <li><a href="#">Bestellen & Leveren</a></li>
+                    <li><a href="#">Betalen</a></li>
+                    <li><a href="#">Retourneren</a></li>
+                    <li><a href="#">Garantie & Reparatie</a></li>
+                </ul>
+            </div>
+            <div class="winkels">
+                <h3>Winkels</h3>
+                <ul>
+                    <li><a href="#">Almere</a></li>
+                    <li><a href="#">Amstelveen</a></li>
+                    <li><a href="#">Amsterdam</a></li>
+                    <li><a href="#">Den Haag</a></li>
+                    <li><a href="#">Eindhoven</a></li>
+                    <li><a href="#">Groningen</a></li>
+                    <li><a href="#">Maastricht</a></li>
+                    <li><a href="#">Rotterdam</a></li>
+                    <li><a href="#">Utrecht</a></li>
+                </ul>
+            </div>
+            <div class="ontdek">
+                <h3>Ontdek</h3>
+                <ul>
+                    <li><a href="#">Inspiratie</a></li>
+                    <li><a href="#">Merken</a></li>
+                    <li><a href="#">Outlet</a></li>
+                    <li><a href="#">Acties</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Damesmode</a></li>
+                    <li><a href="#">Herenmode</a></li>
+                    <li><a href="#">Kindermode</a></li>
+                    <li><a href="#">Wonen</a></li>
+                    <li><a href="#">Cosmetica</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="social-media">
+            <nav class="wil-je-ons-volgen">
+                <h3>wil je ons volgen?</h3>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </nav>
+        </section>
+    </footer>
+</body>
+
+</html>
