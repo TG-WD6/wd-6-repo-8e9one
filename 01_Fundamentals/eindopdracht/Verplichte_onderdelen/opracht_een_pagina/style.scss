@@ -1,0 +1,139 @@
+@import '_button.scss', '_colors.scss', '_images.scss';
+
+
+
+main {
+    margin: 0;
+}
+
+p {
+    color: $product-secondary-color;
+}
+
+.product {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+
+    .product>*:nth-child(1) {
+        flex: 1 1 25%;
+        min-width: 10.3125em;
+    }
+
+    .product>*:nth-child(2) {
+        flex: 1 1 50%;
+    }
+
+    .product>*:nth-child(3) {
+        flex: 1 1 25%;
+
+    }
+}
+
+.afbeelding-product {
+    height: $image-height;
+    width: $image-width;
+    margin: auto 0;
+}
+
+.product-beschrijving {
+    margin: 0 2.5em;
+    padding: 2.5em 0;
+}
+
+.winkel-wagen {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em 0;
+}
+
+.winkel-wagen span,
+.winkel-wagen div {
+    margin: 0.3125em;
+}
+
+.est-bezorg-tijd {
+    color: $product-est-tijd;
+}
+
+.prijs {
+    vertical-align: 0;
+    color: $product-prijs-color;
+    font-weight: 1000;
+}
+
+
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+footer>* {
+    flex: 1 1 10rem;
+}
+
+
+.info-winkels {
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    h3,
+    ul {
+        margin: 0 6.25rem 0 0;
+        padding: 0;
+
+        li {
+            list-style-position: outside;
+            padding: 0;
+            list-style: none;
+            color: $footer-secondary-color;
+        }
+    }
+}
+
+.info-winkels>* {
+    flex: 1 1 10rem;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+
+@media (max-width: 700px) {
+
+    .product {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .afbeelding-product {
+        height: $image-height;
+        width: $image-width;
+        margin: auto 1em;
+    }
+
+    .product>* {
+        flex: 1 1 165px;
+    }
+
+    .product-beschrijving {
+        margin: 1em;
+        padding: 0 2.5em;
+    }
+
+    .winkel-wagen {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2.5em;
+        margin: 1em;
+    }
+
+
+}

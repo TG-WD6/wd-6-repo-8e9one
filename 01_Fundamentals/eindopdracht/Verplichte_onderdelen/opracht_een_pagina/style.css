@@ -1,8 +1,8 @@
 .add,
 .basket {
   background-color: yellow;
-  width: 1.875em;
-  height: 1.875em;
+  width: 1.875rem;
+  height: 1.875rem;
   color: #000;
   border: 0;
   padding: 0;
@@ -12,6 +12,29 @@
 .add:hover,
 .basket:hover {
   background-color: khaki;
+}
+
+.wil-je-ons-volgen i {
+  color: #0077b6;
+  font-size: 30px;
+  margin: 0 5px;
+}
+
+.wil-je-ons-volgen i:hover {
+  color: #0096c7;
+}
+
+.info-winkels li a {
+  text-decoration: none;
+  color: #d3d3d3;
+}
+
+.info-winkels li a:hover {
+  color: #a9a9a9;
+}
+
+main {
+  margin: 0;
 }
 
 p {
@@ -80,6 +103,55 @@ p {
   vertical-align: 0;
   color: red;
   font-weight: 1000;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+footer > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+}
+
+.info-winkels {
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.info-winkels h3,
+.info-winkels ul {
+  margin: 0 6.25rem 0 0;
+  padding: 0;
+}
+
+.info-winkels h3 li,
+.info-winkels ul li {
+  list-style-position: outside;
+  padding: 0;
+  list-style: none;
+  color: #d3d3d3;
+}
+
+.info-winkels > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+}
+
+.social-media {
+  margin-top: 1rem;
 }
 
 @media (max-width: 700px) {

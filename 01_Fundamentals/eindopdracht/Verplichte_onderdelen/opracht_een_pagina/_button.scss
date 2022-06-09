@@ -1,0 +1,35 @@
+@import '_colors.scss';
+
+.add,
+.basket {
+    background-color: $product-button-color;
+    width: 1.875rem;
+    height: 1.875rem;
+    color: #000;
+    border: 0;
+    padding: 0;
+    margin: 0;
+
+    &:hover {
+        background-color: $product-button-hover-color;
+    }
+}
+
+.wil-je-ons-volgen i {
+    color: $footer-media-color;
+    font-size: 30px;
+    margin: 0 5px;
+
+    &:hover {
+        color: $footer-media-hover-color;
+    }
+}
+
+.info-winkels li a {
+    text-decoration: none;
+    color: $footer-secondary-color;
+
+    &:hover {
+        color: $footer-secondary-hover-color;
+    }
+}
