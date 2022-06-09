@@ -51,9 +51,11 @@ p {
 }
 
 .prijs {
+    vertical-align: 0;
     color: $prijs-color;
     font-weight: 1000;
 }
+
 
 @media (max-width: 700px) {
 
