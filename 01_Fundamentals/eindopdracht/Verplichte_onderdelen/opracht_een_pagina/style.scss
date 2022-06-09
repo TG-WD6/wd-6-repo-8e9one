@@ -1,87 +1,85 @@
-@import '_button.scss', '_colors.scss', '_images.scss';
+@import '_button.scss', '_colors.scss', '_images.scss', '_reset.scss';
 
-nav {
-    .navigation {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        height: 10vh;
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5em;
+    background-color: $navbar-secondary-color;
+    margin-bottom: 3rem;
+
+    li {
+        list-style-type: none;
+        font-size: 30px;
+        overflow: hidden;
+
+        i,
+        a {
+            color: $navbar-primary-color;
+            list-style: none;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    }
+}
+
+.menu-bar {
+    display: flex
+}
+
+.container-navbar {
+    display: none;
+    cursor: pointer;
+    height: 100%;
+    width: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $navbar-primary-color;
+}
+
+#toggle-menu {
+    display: none;
+
+    &:checked+.container-navbar .menu-button {
         background-color: $navbar-secondary-color;
 
-        & .menu-bar {
-            display: flex
-        }
-
-        & .container-navbar {
-            display: none;
-            cursor: pointer;
-            height: 100%;
-            width: 30px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: $navbar-primary-color;
-        }
-
-        & #toggle-menu {
-            display: none;
-
-            &:checked+.container-navbar .menu-button {
-                background-color: $navbar-secondary-color;
-
-            }
-
-            &:checked+.container-navbar .menu-button::before {
-                margin-top: 0;
-                transform: rotate(405deg);
-                background-color: $navbar-primary-color;
-            }
-
-            &:checked+.container-navbar .menu-button::after {
-                margin-top: 0;
-                transform: rotate(-405deg);
-                background-color: $navbar-primary-color;
-            }
-        }
-
-        .menu-button,
-        .menu-button::before,
-        .menu-button::after {
-            display: block;
-            background-color: $navbar-primary-color;
-            position: absolute;
-            height: 5px;
-            width: 30px;
-            transition: transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
-            border-radius: 5px;
-        }
-
-        .menu-button::before {
-            content: '';
-            margin-top: -10px;
-        }
-
-        .menu-button::after {
-            content: '';
-            margin-top: 10px;
-        }
-
-        li {
-            list-style-type: none;
-            font-size: 30px;
-            overflow: hidden;
-
-            i,
-            a {
-                color: $navbar-primary-color;
-                list-style: none;
-                text-decoration: none;
-                margin: 0 10px;
-            }
-        }
-
     }
+
+    &:checked+.container-navbar .menu-button::before {
+        margin-top: 0;
+        transform: rotate(405deg);
+        background-color: $navbar-primary-color;
+    }
+
+    &:checked+.container-navbar .menu-button::after {
+        margin-top: 0;
+        transform: rotate(-405deg);
+        background-color: $navbar-primary-color;
+    }
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: $navbar-primary-color;
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    transition: transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 5px;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -10px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 10px;
 }
 
 main {
@@ -235,98 +233,106 @@ footer {
     .social-media {
         margin-top: 1rem;
     }
-
 }
 
 @media (max-width: 700px) {
-    nav {
-        .navigation {
-            position: relative;
-            top: 0;
-            left: 0;
+    .navigation {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0;
+        background-color: $navbar-secondary-color;
 
-            .container-navbar {
-                display: flex;
-                margin-right: 20px;
-            }
+        .container-navbar {
+            display: flex;
+            margin-right: 20px;
+        }
 
-            .menu-bar {
-                position: absolute;
-                flex-direction: column;
-                left: 0;
-                height: 100vh;
-                width: 100%;
-                justify-content: center;
-                transform: translateX(400%);
-                transition: transform 100ms linear;
-            }
+        .menu-bar {
+            position: absolute;
+            flex-direction: column;
+            left: -20px;
+            width: 100%;
+            justify-content: center;
+            transform: translateX(400%);
+            transition: transform 100ms linear;
+        }
 
-            #toggle-menu:checked~.menu-bar {
-                z-index: -10;
-                top: -25vh;
-                transform: translateX(0);
-                background-color: $navbar-secondary-color;
 
-                & li {
-                    height: 2.5rem;
-                    padding: 0.5rem;
+        #toggle-menu:checked~.menu-bar {
+            z-index: -10;
+            top: 80%;
+            transform: translateX(0);
+            background-color: $navbar-secondary-color;
 
-                    &:nth-of-type(1) {
-                        transform: translateX(0);
-                        transition: transform 100ms linear;
-                    }
+            & li {
+                height: 2.5rem;
+                padding: 0.5rem;
 
-                    &:nth-of-type(2) {
-                        transform: translateX(0);
-                        transition: transform 200ms linear;
-                    }
-
-                    &:nth-of-type(3) {
-                        transform: translateX(0);
-                        transition: transform 300ms linear;
-                    }
+                &:nth-of-type(1) {
+                    transform: translateX(0);
+                    transition: transform 100ms linear;
                 }
 
+                &:nth-of-type(2) {
+                    transform: translateX(0);
+                    transition: transform 200ms linear;
+                }
+
+                &:nth-of-type(3) {
+                    transform: translateX(0);
+                    transition: transform 300ms linear;
+                }
             }
 
-            #toggle-menu~.menu-bar li {
-                width: 100%;
-                margin: 0;
-                padding: 0;
-                border: 0;
-                transform: translateX(400%);
-                transition: transform 100ms linear;
-            }
+        }
+
+
+        #toggle-menu~.menu-bar li {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            transform: translateX(400%);
+            transition: transform 100ms linear;
         }
     }
 
-    .product {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 auto;
+
+    main {
+        transform: translateY(200px);
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
+
+        .afbeelding-product {
+            height: $image-height;
+            width: $image-width;
+            margin: auto 1em;
+        }
+
+        .product>* {
+            flex: 1 1 165px;
+        }
+
+        .product-beschrijving {
+            margin: 1em;
+            padding: 0 2.5em;
+        }
+
+        .winkel-wagen {
+            display: flex;
+            flex-direction: column;
+            padding: 0 2.5em;
+            margin: 1em;
+        }
     }
 
-    .afbeelding-product {
-        height: $image-height;
-        width: $image-width;
-        margin: auto 1em;
+    footer {
+        transform: translateY(200px);
     }
-
-    .product>* {
-        flex: 1 1 165px;
-    }
-
-    .product-beschrijving {
-        margin: 1em;
-        padding: 0 2.5em;
-    }
-
-    .winkel-wagen {
-        display: flex;
-        flex-direction: column;
-        padding: 0 2.5em;
-        margin: 1em;
-    }
-
 
 }
