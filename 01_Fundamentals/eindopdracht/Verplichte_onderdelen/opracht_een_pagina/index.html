@@ -55,8 +55,8 @@
             </div>
         </section>
         <section class="product-cards">
-            <div class="container">
-                <div class="product">
+            <div class="container-product">
+                <div id="product-een" class="products">
                     <img class="afbeelding-product"
                         src="https://images.unsplash.com/photo-1627384113743-6bd5a479fffd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZHVjdHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
                         alt="afbeelding-product">
@@ -76,18 +76,8 @@
                             <button class="basket"><i class="fas fa-shopping-basket"></i></button>
                         </div>
                     </div>
-                    <div class="container-pagination">
-                        <button class="btn" id="prev">&#8592</button>
-                        <div class="page active">1</div>
-                        <div class="page">2</div>
-                        <div class="page">3</div>
-                        <div class="page">4</div>
-                        <div class="page">5</div>
-                        <button class="btn" id="next">&#8594</button>
-                    </div>
-                    <script src="script.js"></script>
                 </div>
-                <div class="product">
+                <div id="product-twee" class="product">
                     <img class="afbeelding-product"
                         src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
                         alt="afbeelding-product">
@@ -106,19 +96,9 @@
                             <button class="add"><i class="fas fa-plus"></i></button>
                             <button class="basket"><i class="fas fa-shopping-basket"></i></button>
                         </div>
-                        <div class="container">
-                            <button class="btn" id="prev2">&#8592</button>
-                            <div class="page active">1</div>
-                            <div class="page">2</div>
-                            <div class="page">3</div>
-                            <div class="page">4</div>
-                            <div class="page">5</div>
-                            <button class="btn" id="next2">&#8594</button>
-                        </div>
-                        <script src="script.js"></script>
                     </div>
                 </div>
-                <div class="product">
+                <div id="product-drie" class="product">
                     <img class="afbeelding-product"
                         src="https://images.unsplash.com/photo-1567721913486-6585f069b332?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZHVjdHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
                         alt="afbeelding-product">
@@ -138,24 +118,23 @@
                             <button class="basket"><i class="fas fa-shopping-basket"></i></button>
                         </div>
                     </div>
-                    <div class="container">
-                        <button class="btn" id="prev3">&#8592</button>
-                        <div class="page active">1</div>
-                        <div class="page">2</div>
-                        <div class="page">3</div>
-                        <div class="page">4</div>
-                        <div class="page">5</div>
-                        <button class="btn" id="next3">&#8594</button>
-                    </div>
-                    <script src="script.js"></script>
+                </div>
+                <div class="container-pagination">
+                    <button class="btn-pagination" id="prev">&#8592</button>
+                    <div class="page active">1</div>
+                    <div class="page">2</div>
+                    <div class="page">3</div>
+                    <button class="btn-pagination" id="next">&#8594</button>
                 </div>
             </div>
+
+
 
         </section>
     </main>
     <footer>
         <section class="info-winkels">
-            <div class="klantenservice">
+            <div class="klantenservice toggle">
                 <h3>Klantenservice</h3>
                 <ul>
                     <li><a href="#">Contact opnemen</a></li>
@@ -164,8 +143,12 @@
                     <li><a href="#">Retourneren</a></li>
                     <li><a href="#">Garantie & Reparatie</a></li>
                 </ul>
+                <button class="accordion-toggle">
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
-            <div class="winkels">
+            <div class="winkels toggle">
                 <h3>Winkels</h3>
                 <ul>
                     <li><a href="#">Almere</a></li>
@@ -178,8 +161,13 @@
                     <li><a href="#">Rotterdam</a></li>
                     <li><a href="#">Utrecht</a></li>
                 </ul>
+                <button class="accordion-toggle">
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+
             </div>
-            <div class="ontdek">
+            <div class="ontdek toggle">
                 <h3>Ontdek</h3>
                 <ul>
                     <li><a href="#">Inspiratie</a></li>
@@ -194,9 +182,13 @@
                     <li><a href="#">Wonen</a></li>
                     <li><a href="#">Cosmetica</a></li>
                 </ul>
+                <button class="accordion-toggle">
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
         </section>
-        <section class="social-media">
+        <section class="social-media toggle">
             <nav class="wil-je-ons-volgen">
                 <h3>wil je ons volgen?</h3>
                 <a href="#"><i class="fab fa-facebook-square"></i></a>
@@ -204,8 +196,14 @@
                 <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
             </nav>
+            <button class="accordion-toggle">
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-times"></i>
+            </button>
+
         </section>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

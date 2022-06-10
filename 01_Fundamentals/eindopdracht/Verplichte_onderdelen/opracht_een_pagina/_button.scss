@@ -35,6 +35,26 @@
     }
 }
 
+.btn-pagination {
+    background-color: $pagination-button-color;
+    color: $pagination-primary-color;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    margin: 2em 0 1em auto;
+    font-size: 1.1rem;
+    border: 0;
+
+    &:hover {
+        background-color: $pagination-button-hover-color;
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
 .wil-je-ons-volgen i {
     color: $footer-media-color;
     font-size: 30px;
@@ -51,26 +71,5 @@
 
     &:hover {
         color: $footer-secondary-hover-color;
-    }
-}
-
-.pagination-button {
-    background-color: $button-color;
-    color: $primary-color;
-    width: 33%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding: 0.5em;
-    margin: 2em 0 1em auto;
-    font-size: 1.1rem;
-    border: 0;
-
-    &:hover {
-        background-color: $button-hover-color;
-    }
-
-    &:active {
-        transform: scale(0.9);
     }
 }
