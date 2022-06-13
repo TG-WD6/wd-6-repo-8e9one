@@ -1,4 +1,4 @@
-@import '_button.scss', '_colors.scss', '_images.scss', '_reset.scss';
+@import 'components/_button.scss', 'base/colors', 'components/_images.scss', 'base/_reset';
 
 nav {
     &.navigation {
@@ -161,6 +161,8 @@ main {
         margin: 0;
     }
 
+
+
     .container-product {
         &.product {
             display: flex;
@@ -209,9 +211,14 @@ main {
         }
 
         .prijs {
-            vertical-align: 0;
             color: $product-prijs-color;
             font-weight: 1000;
+        }
+
+        .cent {
+            font-size: 70%;
+            position: relative;
+            bottom: 0.3rem;
         }
     }
 
@@ -299,7 +306,7 @@ main {
 //     }
 // }
 
-@media screen (max-width: 700px) {
+@media (max-width: 700px) {
     body {
         overflow-x: hidden;
     }

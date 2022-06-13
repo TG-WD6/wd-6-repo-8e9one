@@ -1,4 +1,4 @@
-@import '_colors.scss';
+@import 'base/colors';
 
 .login-button {
     background-color: $login-button-color;
@@ -10,6 +10,10 @@
     padding: 15px;
     font-size: 20px;
     border: 0;
+    border-top-left-radius: 40px 50%;
+    border-top-right-radius: 40px 50%;
+    border-bottom-left-radius: 40px 50%;
+    border-bottom-right-radius: 40px 50%;
 
     &:hover {
         background-color: $login-button-hover-color;
@@ -53,6 +57,16 @@
     &:active {
         transform: scale(0.9);
     }
+}
+
+#prev {
+    border-top-left-radius: 40px 50%;
+    border-bottom-left-radius: 40px 50%;
+}
+
+#next {
+    border-top-right-radius: 40px 50%;
+    border-bottom-right-radius: 40px 50%;
 }
 
 .wil-je-ons-volgen i {
