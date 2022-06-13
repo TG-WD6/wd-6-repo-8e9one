@@ -1,0 +1,20 @@
+***OPDRACHT2.1***
+1   let kittensGehad = someKittens.slice(0, 43);
+    let buurmanVraag = someKittens.slice(44)
+
+    De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen.
+
+2.  someKittens.toUpperCase();
+3.  eerste: someKittens[0]
+    laatste: someKittens[6]
+4.  eerste: someKittens.charAt(0) k
+    laatste: someKittens.charAt(6) s 
+
+***OPDRACHT2.2***
+1
+2
+3
+4
+
+***OPDRACHT2.3***
+someKittensArray = someKittens.split('Die, nieuwe, kittens, zijn, zo, schattig!');

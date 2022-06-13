@@ -1,0 +1,22 @@
+***OPDRACHT4.1***
+1.
+<script>
+function pressButtonHelloMsg(){
+    console.log('Hello world');
+}
+</script>
+<button onclick="pressButtonHelloMsg()">Click me</button>
+
+2.
+<form>
+<input type="text" id="inputData" onchange="parameterFunction(inputData)">
+</form>
+
+<script>
+const inputData = document.GetElementById("inputData");
+</script>
+
+3.
+function parameterFunction(parameter){
+    console.log('parameter')
+}

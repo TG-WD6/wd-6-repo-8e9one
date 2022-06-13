@@ -1,0 +1,52 @@
+***OPDRACHT1.1***
+a. Let tekst twee!
+Omdat dat werdt laatst aan 'letOefening' assigned.
+
+b. Let tekst twee!
+Zie a. 
+
+c. Const tekst
+Omdat je een constant maar een keer kan assignen.
+
+d. Var tekst drie!
+
+***OPDRACHT1.2***
+
+1. This is a string, with the value: "Number"
+2.  -true : boolean true
+    -false: boolean false
+    -22: Number 22
+    -22n: string 22n
+    -symbol(): function symbol()
+    -null: object null
+    -{}: object undefined
+    -new Object(): function empty
+    function calculateSomething(){}: function 
+
+***OPDRACHT1.3***
+1. 55
+2. 10
+3.  -== true
+    -=== false
+    -!= false
+    -!== true
+
+***OPDRACHT1.4***
+1. 2
+2.
+3.  modulo = 4
+    division = 2.4
+4. false
+5.  5  = false
+    boolean = false
+    false = true
+    "false" = false
+    true = false 
+    "true" = false
+    null = true
+    undefined = true
+
+6.  nee, ++
+7.  NEED TO FINISH
+
+

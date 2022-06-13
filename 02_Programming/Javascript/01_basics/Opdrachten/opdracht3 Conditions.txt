@@ -1,0 +1,126 @@
+
+***OPDRACHT3.1***
+1. == && === vergelijken twee waarden == kijkt niet naar type === wel.
+2. > && >=  , (greater than or equal to) >= neemt het startgetal ook mee in de vergelijking
+   < && <=  , (less than or equal to) <= neemt het startgetal ook mee in de vergelijking
+3. if (x==4 && y==8){
+    console.log('result!')
+}
+4. if (x==4 || y==8){
+    console.log('result')
+}
+
+MIGHT BE WRONG
+5. if (x!=4 && y!=8){
+
+}  else{
+    console.log('result')
+}
+6
+
+
+7, 8, 9, 10
+if (x>5 && x<10){
+    console.log('tussen 5 en 10')
+} else if (x>11 && <20){
+    console.log('tussen 11 en 20')
+} else if (x===21 || x===23){
+    console.log('x is 21 of 23)
+} else if (x<35 || x>=40 && x<=45)
+
+***OPDRACHT3.2***
+1. 
+if (x===3){
+    console.log("you're number was 3")
+}else if (x>4){
+    console.log("you're number was greater than 4 but less than 12")
+}else if (x>11){
+    console.log("you're number was greater than 11")
+}else if (x<3){
+    console.log("you're number was less than 3")
+}
+2. nee(20), na eerste else if statement was het al correct dus werd het antwoord al gelogged op het console.
+
+3.
+let x = een nummer van 1 t/m 12 
+if (x===1){
+    console.log('Januari')
+} else if(x===2){
+    console.log('Februari')
+}
+} else if(x===3){
+    console.log('Maart')
+}
+} else if(x===4){
+    console.log('April')
+}
+} else if(x===5){
+    console.log('Mei')
+}
+} else if(x===6){
+    console.log('Juni')
+}
+} else if(x===7){
+    console.log('Juli')
+}
+} else if(x===8){
+    console.log('Augustus')
+}
+} else if(x===9){
+    console.log('September')
+}
+} else if(x===10){
+    console.log('October')
+}
+} else if(x===11){
+    console.log('November')
+}
+} else if(x===12){
+    console.log('December')
+} else if(x<1 || x>12){
+    console.log('Geen geldige maand!')
+}
+4.
+let x = een nummer van 1 t/m 12 
+
+switch (maand) {
+    case 1:
+    console.log('Januari');
+    break;
+    case 1:
+    console.log('Februari');
+    break;
+    case 1:
+    console.log('Maart');
+    break;
+    case 1:
+    console.log('April');
+    break;
+    case 1:
+    console.log('Mei');
+    break;
+    case 1:
+    console.log('Juni');
+    break;
+    case 1:
+    console.log('Juli');
+    break;
+    case 1:
+    console.log('Augustus');
+    break;
+    case 1:
+    console.log('September');
+    break;
+    case 1:
+    console.log('October');
+    break;
+    case 1:
+    console.log('November');
+    break;
+    case 1:
+    console.log('December');
+    break;
+    default:
+    console.log('Geen geldige maand!');
+}
+5.
