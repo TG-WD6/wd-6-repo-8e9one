@@ -17,21 +17,18 @@
         <div class="logo">
             <img src="https://techgrounds.nl/wp-content/uploads/2022/05/TG-logo-300x60.png" alt="techgrounds-logo">
         </div>
-        <!-- <div class="menu"> -->
         <input type="checkbox" id="toggle-menu">
         <label for="toggle-menu" class="container-navbar">
             <div class="menu-button"></div>
         </label>
         <ul class="menu-bar">
-            <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
-            <li><a href="#"><i class="fa fa-heart"></i>Popular</a></li>
-            <li><a href="#"><i class="fa fa-envelope"></i>Contact</a></li>
+            <li><a href="#login-id"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#product-id"><i class="fa fa-heart"></i>Popular</a></li>
+            <li><a href="#winkel-id"><i class="fa fa-envelope"></i>Contact</a></li>
         </ul>
-        <!-- </div> -->
-
     </nav>
     <main>
-        <section class="login">
+        <section class="login" id="login-id">
             <img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHNlY3VyaXR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                 alt="Login">
             <div class="container">
@@ -54,7 +51,7 @@
                 <button class="login-button">LOGIN</button>
             </div>
         </section>
-        <section class="product-cards">
+        <section class="product-cards" id="product-id">
             <div class="container-product">
                 <div id="product-een" class="products">
                     <img class="afbeelding-product"
@@ -108,7 +105,6 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem provident eum cum aut animi
                             exercitationem
                             impedit debitis rerum deserunt accusamus.</p>
-
                     </div>
                     <div class="winkel-wagen">
                         <div class="prijs">99,<span class="cent">99</span></div>
@@ -127,13 +123,10 @@
                     <button class="btn-pagination" id="next">&#8594</button>
                 </div>
             </div>
-
-
-
         </section>
     </main>
     <footer>
-        <section class="info-winkels">
+        <section class="info-winkels" id="winkel-id">
             <div class="klantenservice toggle">
                 <h3>Klantenservice</h3>
                 <ul>
@@ -165,7 +158,6 @@
                     <i class="fas fa-plus"></i>
                     <i class="fas fa-times"></i>
                 </button>
-
             </div>
             <div class="ontdek toggle">
                 <h3>Ontdek</h3>
@@ -200,7 +192,6 @@
                 <i class="fas fa-plus"></i>
                 <i class="fas fa-times"></i>
             </button>
-
         </section>
     </footer>
     <script src="script.js"></script>

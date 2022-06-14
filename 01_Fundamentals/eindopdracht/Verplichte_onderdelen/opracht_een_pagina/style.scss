@@ -1,158 +1,17 @@
-@import 'components/_button.scss', 'base/colors', 'components/_images.scss', 'base/_reset';
+@import 'components/button', 'components/images', 'base/_reset', 'layout/navigation', 'layout/footer', 'layout/forms';
 
-nav {
-    &.navigation {
-        display: flex;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 10;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        height: 5rem;
-        background-color: $navbar-secondary-color;
-        margin-bottom: 3rem;
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 250px;
+}
 
-
-    }
-
-    li {
-        list-style-type: none;
-        font-size: 30px;
-        overflow: hidden;
-
-        i,
-        a {
-            color: $navbar-primary-color;
-            list-style: none;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-    }
-
-    .menu-bar {
-        display: flex
-    }
-
-    .container-navbar {
-        display: none;
-        cursor: pointer;
-        height: 100%;
-        width: 30px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: $navbar-primary-color;
-    }
-
-    #toggle-menu {
-        display: none;
-
-        &:checked+.container-navbar .menu-button {
-            background-color: $navbar-secondary-color;
-        }
-
-        &:checked+.container-navbar .menu-button::before {
-            margin-top: 0;
-            transform: rotate(405deg);
-            background-color: $navbar-primary-color;
-        }
-
-        &:checked+.container-navbar .menu-button::after {
-            margin-top: 0;
-            transform: rotate(-405deg);
-            background-color: $navbar-primary-color;
-        }
-    }
-
-    .menu-button,
-    .menu-button::before,
-    .menu-button::after {
-        display: block;
-        background-color: $navbar-primary-color;
-        position: absolute;
-        height: 5px;
-        width: 30px;
-        transition: transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
-        border-radius: 5px;
-    }
-
-    .menu-button::before {
-        content: '';
-        margin-top: -10px;
-    }
-
-    .menu-button::after {
-        content: '';
-        margin-top: 10px;
-    }
-
-
-
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 main {
     transform: translateY(100px);
-
-    .login {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-
-        img {
-            height: 250px;
-            width: 250px;
-            border: 0;
-            border-radius: 10%;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        h2 {
-            text-align: center;
-            color: $login-secondary-color;
-            font-weight: 10;
-        }
-
-        a {
-            text-decoration: none;
-            color: $login-button-color;
-        }
-
-        .input-tekst {
-            position: relative;
-            width: 300px;
-        }
-
-        .input-tekst input {
-            border: 0;
-            border-bottom: 1px black solid;
-            display: block;
-            width: 100%;
-            padding: 30px 0 5px 0;
-        }
-
-        input:focus {
-            outline: 0;
-
-        }
-
-        .remember-forget {
-            display: flex;
-            justify-content: space-between;
-            padding: 15px 0;
-        }
-    }
-
-    p {
-        color: $product-secondary-color;
-    }
 
     .product-cards {
         display: flex;
@@ -160,8 +19,6 @@ main {
         justify-content: center;
         margin: 0;
     }
-
-
 
     .container-product {
         &.product {
@@ -207,11 +64,11 @@ main {
         }
 
         .est-bezorg-tijd {
-            color: $product-est-tijd;
+            color: limegreen;
         }
 
         .prijs {
-            color: $product-prijs-color;
+            color: purple;
             font-weight: 1000;
         }
 
@@ -224,155 +81,30 @@ main {
 
     .container-pagination {
         display: flex;
+        position: relative;
         text-align: center;
         align-items: center;
         justify-content: center;
 
         .page {
-            color: $pagination-secondary-color;
+            color: purple;
             padding: 1rem 2rem;
+            margin: 2rem 0 1rem auto;
             display: flex;
             align-items: center;
             justify-content: center;
 
             &.active {
-                border: 1px solid $pagination-button-hover-color;
+                border: 1px solid violet;
             }
 
         }
     }
-
-    .btn-pagination {
-        background-color: $pagination-button-color;
-        color: $pagination-primary-color;
-        cursor: pointer;
-        padding: 1rem 2rem;
-        margin: 0.25rem;
-
-        &:active {
-            transform: scale(0.95);
-        }
-
-        &:hover {
-            background-color: $pagination-button-hover-color;
-            outline: 0;
-        }
-    }
-
-
 
 
 }
 
-// footer {
-//     display: flex;
-//     flex-wrap: wrap;
-//     margin: 1rem auto;
-//     padding: 1rem;
-
-//     &>* {
-//         flex: 1 1 30rem;
-//     }
-
-//     .accordion-toggle {
-//         display: none;
-//     }
-
-//     .info-winkels {
-//         margin-top: 0;
-//         display: flex;
-//         flex-wrap: wrap;
-
-//         h3,
-//         ul {
-//             margin: 0 6.25rem 0 0;
-//             padding: 0;
-
-//             li {
-//                 list-style-position: outside;
-//                 padding: 0;
-//                 list-style: none;
-//                 color: $footer-secondary-color;
-//             }
-
-//             &>* {
-//                 flex: 1 1 10rem;
-//             }
-//         }
-//     }
-
-//     .social-media {
-//         margin-top: 1rem;
-//     }
-// }
-
 @media (max-width: 700px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    .navigation {
-        position: relative;
-        top: 0;
-        left: 0;
-        margin: 0;
-        z-index: 10;
-        background-color: $navbar-secondary-color;
-
-        .container-navbar {
-            display: flex;
-            margin-right: 20px;
-        }
-
-        .menu-bar {
-            position: absolute;
-            flex-direction: column;
-            left: 0;
-            right: 0;
-            justify-content: center;
-            transform: translateX(400vw);
-            transition: transform 100ms linear;
-        }
-
-
-        #toggle-menu:checked~.menu-bar {
-            z-index: -10;
-            top: 80%;
-            transform: translateX(0);
-            background-color: $navbar-secondary-color;
-
-            & li {
-                height: 2.5rem;
-                padding: 0.5rem;
-
-                &:nth-of-type(1) {
-                    transform: translateX(0);
-                    transition: transform 100ms linear;
-                }
-
-                &:nth-of-type(2) {
-                    transform: translateX(0);
-                    transition: transform 200ms linear;
-                }
-
-                &:nth-of-type(3) {
-                    transform: translateX(0);
-                    transition: transform 300ms linear;
-                }
-            }
-
-        }
-
-
-        #toggle-menu~.menu-bar li {
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            border: 0;
-            transform: translateX(400%);
-            transition: transform 100ms linear;
-        }
-    }
 
 
     main {
@@ -401,10 +133,11 @@ main {
                 height: $image-height;
                 width: $image-width;
                 margin: auto 1em;
+                padding: 1rem 2rem;
             }
 
             .product>* {
-                flex: 1 1 165px;
+                flex: 1 1;
             }
 
             .product-beschrijving {
@@ -447,17 +180,17 @@ main {
 
         .toggle.active::before,
         .toggle.active::after {
-            content: url('https://techgrounds.nl/wp-content/uploads/2022/05/TG-logo-300x60.png');
+            content: '';
             color: purple;
             position: absolute;
             opacity: 0.3;
-            top: 20px;
-            left: 20px;
+            top: -0.5rem;
+            left: -1rem;
         }
 
         .toggle.active::before {
-            top: -10px;
-            left: -30px;
+            top: -0.5rem;
+            left: -1rem;
             transform: rotateY(180deg);
         }
 
@@ -499,7 +232,7 @@ main {
         }
 
         .toggle.active .accordion-toggle .fa-times {
-            color: #fff;
+            color: white;
             display: block;
         }
 
@@ -508,7 +241,7 @@ main {
         }
 
         .toggle.active .accordion-toggle {
-            color: #fff;
+            color: white;
             background-color: purple;
         }
 

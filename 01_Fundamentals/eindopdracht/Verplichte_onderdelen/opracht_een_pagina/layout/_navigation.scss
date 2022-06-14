@@ -10,7 +10,7 @@ nav {
         align-items: center;
         justify-content: space-between;
         height: 5rem;
-        background-color: $navbar-secondary-color;
+        background-color: purple;
         margin-bottom: 3rem;
 
 
@@ -23,7 +23,7 @@ nav {
 
         i,
         a {
-            color: $navbar-primary-color;
+            color: white;
             list-style: none;
             text-decoration: none;
             margin: 0 10px;
@@ -42,26 +42,26 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: $navbar-primary-color;
+        color: purple;
     }
 
     #toggle-menu {
         display: none;
 
         &:checked+.container-navbar .menu-button {
-            background-color: $navbar-secondary-color;
+            background-color: purple;
         }
 
         &:checked+.container-navbar .menu-button::before {
             margin-top: 0;
             transform: rotate(405deg);
-            background-color: $navbar-primary-color;
+            background-color: white;
         }
 
         &:checked+.container-navbar .menu-button::after {
             margin-top: 0;
             transform: rotate(-405deg);
-            background-color: $navbar-primary-color;
+            background-color: white;
         }
     }
 
@@ -69,7 +69,7 @@ nav {
     .menu-button::before,
     .menu-button::after {
         display: block;
-        background-color: $navbar-primary-color;
+        background-color: white;
         position: absolute;
         height: 5px;
         width: 30px;
@@ -102,7 +102,7 @@ nav {
         left: 0;
         margin: 0;
         z-index: 10;
-        background-color: $navbar-secondary-color;
+        background-color: purple;
 
         .container-navbar {
             display: flex;
@@ -124,7 +124,7 @@ nav {
             z-index: -10;
             top: 80%;
             transform: translateX(0);
-            background-color: $navbar-secondary-color;
+            background-color: purple;
 
             & li {
                 height: 2.5rem;
@@ -171,7 +171,7 @@ nav {
         left: 0;
         margin: 0;
         z-index: 10;
-        background-color: $navbar-secondary-color;
+        background-color: purple;
 
         .container-navbar {
             display: flex;
@@ -193,7 +193,7 @@ nav {
             z-index: -10;
             top: 80%;
             transform: translateX(0);
-            background-color: $navbar-secondary-color;
+            background-color: purple;
 
             & li {
                 height: 2.5rem;

@@ -1,0 +1,41 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    padding: 1rem;
+
+    &>* {
+        flex: 1 1 30rem;
+    }
+
+    .accordion-toggle {
+        display: none;
+    }
+
+    .info-winkels {
+        margin-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        h3,
+        ul {
+            margin: 0 6.25rem 0 0;
+            padding: 0;
+
+            li {
+                list-style-position: outside;
+                padding: 0;
+                list-style: none;
+                color: purple;
+            }
+
+            &>* {
+                flex: 1 1 10rem;
+            }
+        }
+    }
+
+    .social-media {
+        margin-top: 1rem;
+    }
+}
