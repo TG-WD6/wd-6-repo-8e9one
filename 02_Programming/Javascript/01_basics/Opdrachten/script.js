@@ -92,9 +92,62 @@
 //     }
 // }
 
-for (let i = 1; i <= 3; i++) {
-    console.log(`this is round ${i}`);
-    for (let q = 1; q <= 10; q++) {
-        console.log(q)
-    }
-}
+// for (let i = 1; i <= 3; i++) {
+//     console.log(`this is round ${i}`);
+//     for (let q = 1; q <= 10; q++) {
+//         console.log(q * i)
+//     }
+// }
+
+// let fiboArray = [0, 1]
+// for (let i = 2; i <= 50; i++) {
+//     fiboArray[i] = fiboArray[i - 2] + fiboArray[i - 1];
+// }
+// console.log(fiboArray);
+
+// let dutchSports = ['Voetbal', 'Hockey', 'Schaatsen']
+
+// dutchSports.push('Zeilen', 'Zwemmen')
+// dutchSports.unshift('Volleybal')
+
+// let ballSports = dutchSports.splice(0, 3)
+// console.log(ballSports);
+
+// let dutchSports = ['Voetbal', 'Hockey', 'Schaatsen']
+
+// dutchSports.push('Zeilen', 'Zwemmen')
+// dutchSports.unshift('Volleybal')
+
+// let ballSports = dutchSports.splice(0, 3)
+// console.log(`ballSports zijn ${ballSports}`);
+
+// dutchSports.shift(ballSports);
+
+// console.log(`rest zijn ${dutchSports}.`)
+
+// let dutchSports = ['Voetbal', 'Hockey', 'Schaatsen']
+
+// dutchSports.push('Zeilen', 'Zwemmen')
+// dutchSports.unshift('Volleybal')
+
+// console.log(`Alfabetische volgorde ${dutchSports.sort()}.`)
+
+// let dutchSports = ['Voetbal', 'Hockey', 'Schaatsen']
+
+// dutchSports.push('Zeilen', 'Zwemmen')
+// dutchSports.unshift('Volleybal')
+
+// for (let i = 0; i < dutchSports.length; i++) {
+//     console.log(dutchSports[i]);
+
+// }
+
+
+// let dutchSports = ['Voetbal', 'Hockey', 'Schaatsen']
+
+// dutchSports.push('Zeilen', 'Zwemmen')
+// dutchSports.unshift('Volleybal')
+
+// for (let i = 0; i < dutchSports.length; i++) {
+//     let sportsLength = dutchSports[i].length; console.log(`the length of the word ${dutchSports[i]} is ${sportsLength}`)
+// }

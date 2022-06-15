@@ -53,5 +53,144 @@ for (let i = 1; i <= 3; i++) {
 }
 
 5.
+for (let i = 1; i <= 3; i++) {
+    console.log(`this is round ${i}`);
+    for (let q = 1; q <= 10; q++) {
+        console.log(q * i)
+    }
+}
 
+6.
+let fiboArray = [0, 1]
+for (let i = 2; i <= 50; i++) {
+    fiboArray[i] = fiboArray[i - 2] + fiboArray[i - 1];
+}
+console.log(fiboArray);
+
+7.
+
+***OPDRACHT5.3***
+
+1.
+let dutchSports = ['Voetbal', 'Hockey', 'Schaatsen']
+
+dutchSports.push('Zeilen', 'Zwemmen')
+console.log(dutchSports);
+
+2.
+let dutchSports = ['Voetbal', 'Hockey', 'Schaatsen']
+
+dutchSports.push('Zeilen', 'Zwemmen')
+dutchSports.unshift('Volleybal')
+console.log(dutchSports);
+
+3.
+let dutchSports = ['Voetbal', 'Hockey', 'Schaatsen']
+
+dutchSports.push('Zeilen', 'Zwemmen')
+dutchSports.unshift('Volleybal')
+
+let ballSports = dutchSports.splice(0, 3)
+console.log(ballSports);
+
+4.
+let dutchSports = ['Voetbal', 'Hockey', 'Schaatsen']
+
+dutchSports.push('Zeilen', 'Zwemmen')
+dutchSports.unshift('Volleybal')
+
+let ballSports = dutchSports.splice(0, 3)
+console.log(`ballSports zijn ${ballSports}`);
+
+dutchSports.shift(ballSports);
+
+console.log(`rest zijn ${dutchSports}.`)
+
+5.
+let dutchSports = ['Voetbal', 'Hockey', 'Schaatsen']
+
+dutchSports.push('Zeilen', 'Zwemmen')
+dutchSports.unshift('Volleybal')
+
+console.log(`Alfabetische volgorde ${dutchSports.sort()}.`)
+
+6.
+let dutchSports = ['Voetbal', 'Hockey', 'Schaatsen']
+
+dutchSports.push('Zeilen', 'Zwemmen')
+dutchSports.unshift('Volleybal')
+
+for (let i = 0; i < dutchSports.length; i++) {
+    console.log(dutchSports[i]);
+
+}
+
+7.
+let dutchSports = ['Voetbal', 'Hockey', 'Schaatsen']
+
+dutchSports.push('Zeilen', 'Zwemmen')
+dutchSports.unshift('Volleybal')
+
+for (let i = 0; i < dutchSports.length; i++) {
+    let sportsLength = dutchSports[i].length; console.log(`the length of the word ${dutchSports[i]} is ${sportsLength}`)
+}
+
+***OPDRACHT5.4***
+
+1.
+filter() : filtert uit items die voldoen aan de voorwaardes en zet ze in een new array.
+
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter(word => word.length > 6);
+
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]
+
+2.
+find() : zoekt het eerste item dat voldoet aan de voorwaardes. anders geeft ie undefined.
+
+const array1 = [5, 12, 8, 130, 44];
+
+const found = array1.find(element => element > 10);
+
+console.log(found);
+// expected output: 12
+
+3.
+some() :het zoekt binnen de array of ten minste een van de elementen voldoen aan de voorwaardes. als het antwoord ja is geeft ie een true anders een false.
+
+const array = [1, 2, 3, 4, 5];
+
+// checks whether an element is even
+const even = (element) => element % 2 === 0;
+
+console.log(array.some(even));
+// expected output: true
+
+4.
+every() :het zoekt binnen de array of alle elementen voldoen aan de voorwaardes en geeft een true of false aan.
+
+const isBelowThreshold = (currentValue) => currentValue < 40;
+
+const array1 = [1, 30, 39, 29, 10, 13];
+
+console.log(array1.every(isBelowThreshold));
+// expected output: true
+
+5.
+includes() :
+
+const array1 = [1, 2, 3];
+
+console.log(array1.includes(2));
+// expected output: true
+
+const pets = ['cat', 'dog', 'bat'];
+
+console.log(pets.includes('cat'));
+// expected output: true
+
+console.log(pets.includes('at'));
+// expected output: false
 
