@@ -1,4 +1,4 @@
-***OPDRACHT4.1***
+***OPDRACHT4.1*** NOT DONE
 1.
 <script>
 function pressButtonHelloMsg(){
@@ -9,14 +9,124 @@ function pressButtonHelloMsg(){
 
 2.
 <form>
-<input type="text" id="inputData" onchange="parameterFunction(inputData)">
+<input type="text" id="inputData">
 </form>
 
 <script>
-const inputData = document.GetElementById("inputData");
+let inputData = document.getElementById("inputData");
 </script>
 
 3.
-function parameterFunction(parameter){
-    console.log('parameter')
+<form>
+<input type="text" id="inputData" onchange="parameterFunction()">
+</form>
+
+let inputData = document.getElementById('inputData');
+
+function parameterFunction(inputData){
+    console.log(`this is your input ${inputData}.`)
 }
+
+4.
+function parameterFunction(parameter){
+    result = parameter*2
+    console.log(result)
+}
+
+***OPDRACHT4.2***
+1.
+document.getElementsByClassName
+geeft een sort array object van alle child elements.
+let selector = document.getElementsByClassName('class-name');
+
+document.getElementsByTagName
+geeft een lijst van data van dat html tag name bv alle <a></a> tags.
+const btns = document.getElementsByTagName('button');
+
+
+document.querySelector
+geeft het eerste match binnen document van een css selector.
+let myClass = document.querySelector('.myclass');
+
+document.querySelectorAll
+geeft alle matches binnen document van een css selector (soort  array)
+const matches = document.querySelectorAll(".class");
+
+element.innerHTML
+geeft of wijzigd de HTML of XML markup binnen dat element.
+const demoData = document.getElementById("demo").innerHTML = "Paragraph changed!";
+
+element.innerText
+
+blankHead = document.getElementById("heading").innerText='';
+
+2.
+<form>
+<input type="text" id="inputData" oninput="parameterFunction()">
+</form>
+
+let inputData = document.getElementById('inputData');
+
+function parameterFunction(inputData){
+    console.log(`this is your input ${inputData.value}.`)
+}
+
+***OPDRACHT4.3***
+1.
+function randomNumber() {
+    console.log(Math.random())
+}
+randomNumber geeft nummers tussen 0 en <1.
+
+2.
+function randomNumber(x) {
+    x = 10;
+    console.log(Math.floor(Math.random() * x))
+}
+geen cijfers achter de comma.
+
+3.
+Math.min()
+geeft laagste nummer (parameter) ook NaN als er geen nummer zijn.
+console.log(Math.min(1,2,5,6));
+output = 1
+
+Math.max()
+geeft hoogste nummer (parameter) ook NaN als er geen nummer zijn.
+console.log(Math.max(1,2,5,6));
+output = 6s
+
+***OPDRACHT4.4***
+
+<form>
+<input type="text" id="inputData" onchange="parameterFunction()">
+</form>
+
+let inputData = document.getElementById('inputData');
+
+function parameterFunction(inputData){
+    console.log(`this is your input ${inputData}.`)
+}
+
+1
+const group = ['Bob','luis','benn','john']
+let inputData = document.getElementById('inputData');
+
+function parameterFunction(inputData) {
+    console.log(`this is your input ${inputData.value}.`)
+    if (group.includes(inputData.value) === true) {
+        console.log('Yes luis is in this group.')
+    } else {
+        console.log('no luis is not in this group.')
+    }
+}
+ 
+2 NEED TO FINISH  THIS FUNCTION
+function ChangeHTML(){
+    parameterFunction()
+}
+
+3
+(()=>{
+
+})

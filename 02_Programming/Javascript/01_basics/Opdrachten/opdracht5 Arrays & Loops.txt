@@ -1,0 +1,57 @@
+***OPDRACHT5.1***
+1.
+const arrayNummer = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+console.log(arrayNummer);
+
+2.
+const arrayFruit = ['Appel', 'Aardbei', 'Druif', 'Bessen', 'Banaan']
+
+console.log(arrayFruit);
+
+3.
+console.log(arrayFruit[0], arrayFruit[1]);
+
+4.
+console.log(arrayFruit[Math.floor(Math.random() * 5)]);
+
+5.
+console.log(arrayFruit.length);
+
+6.(not sure)
+
+7.
+arrayFruit.splice(0, 1, 'Peer')
+
+8.
+arrayFruit.splice(0, 2, 'Aardbei', 'Peer')
+
+***OPDRACHT5.2***
+
+1.
+
+
+2.
+const dutchSports = ['Voetbal', 'Hockey', 'Schaatsen']
+
+for (let i = 0; i < dutchSports.length; i++) {
+    console.log(`index ${i} is hier ${dutchSports[i]}`)
+}
+
+3.
+
+for (let i = 0; i <= 20; i += 2) {
+    console.log([i]);
+}
+
+4.
+for (let i = 1; i <= 3; i++) {
+    console.log(`this is round ${i}`);
+    for (let q = 1; q <= 10; q++) {
+        console.log(q)
+    }
+}
+
+5.
+
+
