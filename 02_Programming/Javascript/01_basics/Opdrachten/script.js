@@ -151,3 +151,99 @@
 // for (let i = 0; i < dutchSports.length; i++) {
 //     let sportsLength = dutchSports[i].length; console.log(`the length of the word ${dutchSports[i]} is ${sportsLength}`)
 // }
+
+// function pet(name, type) {
+//     this.name = name
+//     this.type = type
+// }
+
+// let functionPet = new pet('Mister', 'cat')
+// console.log(functionPet)
+
+// const Mister = Object.create(functionPet)
+// Mister.name = 'MisterFunction';
+// Mister.type = 'catFunction';
+
+// console.log(Mister)
+
+// let persoon1 = {
+//     name: 'jo',
+//     age: 12
+// }
+// let persoon2 = {
+//     name: 'jojo',
+//     age: 24
+// }
+// let persoon3 = {
+//     name: 'jojojo',
+//     age: 36
+// }
+// let persoon4 = {
+//     name: 'mo',
+//     age: 10
+// }
+// let persoon5 = {
+//     name: 'momo',
+//     age: 20
+// }
+// let persoon6 = {
+//     name: 'momomo',
+//     age: 30
+// }
+// let persoon7 = {
+//     name: 'bob',
+//     age: 14
+// }
+// let persoon8 = {
+//     name: 'bobob',
+//     age: 28
+// }
+// let persoon9 = {
+//     name: 'bobobob',
+//     age: 42
+// }
+// let persoon10 = {
+//     name: 'kevin',
+//     age: 2
+// }
+
+// let arrayPersonen = [persoon1, persoon2, persoon3, persoon4, persoon5, persoon6, persoon7, persoon8, persoon9, persoon10]
+
+// arrayPersonen.sort(function (a, b) {
+//     return a.age - b.age;
+// });
+
+// console.log(arrayPersonen)
+
+// class clubClass {
+//     constructor(name, type, amount) {
+//         this.name = name
+//         this.type = type
+//         this.amount = amount
+//     }
+// }
+// let clubInfo = new clubClass('Extreme breien', 'gevaarlijk', 10)
+
+// console.log(clubInfo)
+
+// class clubClass {
+//     constructor(naam, type, aantal) {
+//         this.naam = naam
+//         this.type = type
+//         this.aantal = aantal
+//     }
+// }
+// let clubInfo = new clubClass('Extreme breien', 'gevaarlijk', 10)
+// class contactInformatie {
+//     constructor(adres, tel, contactPersoon) {
+//         this.adres = adres
+//         this.tel = tel
+//         this.contactPersoon = contactPersoon
+//     }
+// }
+// let persoonExample = new contactInformatie('pindakaasstraat 420', 064206666, 'Bob')
+
+// clubInfo = { clubInfo, persoonExample }
+// clubClass = { clubClass, contactInformatie }
+// console.log(clubInfo)
+// console.log(clubClass)
