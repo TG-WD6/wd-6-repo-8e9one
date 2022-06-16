@@ -90,15 +90,15 @@
 }
 
 .info-winkels li a:hover {
-  color: white;
+  color: violet;
 }
 
-@media (max-width: 700ox) {
-  .winkels .toggle.active li a {
+@media (max-width: 700px) {
+  .info-winkels li a {
     text-decoration: none;
     color: purple;
   }
-  .winkels .toggle.active li a:hover {
+  .info-winkels li a:hover {
     color: white;
   }
 }
@@ -518,13 +518,9 @@ nav .menu-button::after {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 1rem 2rem;
   max-width: 1000px;
   margin-left: 20%;
   padding: 0.5rem;
@@ -535,15 +531,14 @@ footer .accordion-toggle {
 }
 
 footer .info-winkels {
-  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 
 footer .info-winkels h3,
@@ -560,16 +555,10 @@ footer .info-winkels ul li {
   color: purple;
 }
 
-footer .info-winkels h3 > *,
-footer .info-winkels ul > * {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 10rem;
-          flex: 1 1 10rem;
-}
-
-footer .social-media {
-  margin-top: 1rem;
-  margin-left: 3rem;
+footer .wil-je-ons-volgen {
+  position: relative;
+  left: -10px;
+  top: 0px;
 }
 
 @media (max-width: 700px) {
@@ -617,8 +606,8 @@ footer .social-media {
     border: 1px solid purple;
     max-width: 30%;
     border-radius: 10px;
-    margin: 20px 0;
-    padding: 30px;
+    margin: 0;
+    padding: 50px;
     position: relative;
     overflow: hidden;
     -webkit-transition: 500ms ease;
@@ -788,6 +777,23 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 250px;
   max-width: 1000px;
+  font-family: sans-sarif;
+}
+
+html h1 {
+  font-size: 2.25rem;
+}
+
+html h2 {
+  font-size: 2rem;
+}
+
+html h3 {
+  font-size: 1.1rem;
+}
+
+html small {
+  font-size: 0.875rem;
 }
 
 body {
@@ -798,6 +804,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .product-cards {
