@@ -1,3 +1,5 @@
+@import '../base/colors';
+
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -5,7 +7,7 @@ footer {
     padding: 1rem;
 
     &>* {
-        flex: 1 1 30rem;
+        flex: 1 1 20%;
     }
 
     .accordion-toggle {
@@ -26,7 +28,7 @@ footer {
                 list-style-position: outside;
                 padding: 0;
                 list-style: none;
-                color: purple;
+                color: $primary-color;
             }
 
             &>* {
@@ -37,5 +39,118 @@ footer {
 
     .social-media {
         margin-top: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    footer {
+        transform: translateY(250px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+        section .info-winkels {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: 0 20%;
+        }
+
+        .toggle {
+            background-color: transparent;
+            border: 1px solid $primary-color;
+            max-width: 30%;
+            border-radius: 10px;
+            margin: 20px 0;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            transition: 500ms ease;
+        }
+
+        .toggle.active {
+            background: url(https://techgrounds.nl/wp-content/uploads/2022/05/TG-logo-300x60.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            min-width: 95%;
+            background-color: $tertiary-color;
+            background-size: 40%;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .klantenservice.toggle.active,
+        .winkels.toggle.active,
+        .ontdek.toggle.active {
+            flex-direction: column;
+        }
+
+        .toggle.active::before,
+        .toggle.active::after {
+            content: '';
+            color: $primary-color;
+            position: absolute;
+            opacity: 0.3;
+            top: -0.5rem;
+            left: -1rem;
+        }
+
+        .toggle.active::before {
+            top: -0.5rem;
+            left: -1rem;
+            transform: rotateY(180deg);
+        }
+
+        .toggle li {
+            display: none;
+            margin: 0 0;
+        }
+
+        .toggle h3 {
+            margin: 0 0;
+        }
+
+        .toggle.active li {
+            display: block;
+        }
+
+        .accordion-toggle {
+            background-color: transparent;
+            border: 0;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            width: 30px;
+            height: 30px;
+        }
+
+        .accordion-toggle:focus {
+            outline: 0;
+        }
+
+        .accordion-toggle .fa-times {
+            display: none;
+        }
+
+        .toggle.active .accordion-toggle .fa-times {
+            color: $primary-color;
+            display: block;
+        }
+
+        .toggle.active .accordion-toggle .fa-plus {
+            display: none;
+        }
+
+        .toggle.active .accordion-toggle {
+            color: white;
+            background-color: $secondary-color;
+        }
     }
 }

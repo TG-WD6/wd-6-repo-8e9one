@@ -90,7 +90,17 @@
 }
 
 .info-winkels li a:hover {
-  color: violet;
+  color: white;
+}
+
+@media (max-width: 700ox) {
+  .winkels .toggle.active li a {
+    text-decoration: none;
+    color: purple;
+  }
+  .winkels .toggle.active li a:hover {
+    color: white;
+  }
 }
 
 * {
@@ -519,8 +529,8 @@ footer {
 
 footer > * {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 30rem;
-          flex: 1 1 30rem;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
 }
 
 footer .accordion-toggle {
@@ -559,6 +569,133 @@ footer .info-winkels ul > * {
 
 footer .social-media {
   margin-top: 1rem;
+}
+
+@media (max-width: 700px) {
+  footer {
+    -webkit-transform: translateY(250px);
+            transform: translateY(250px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  footer section .info-winkels {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 20%;
+  }
+  footer .toggle {
+    background-color: transparent;
+    border: 1px solid purple;
+    max-width: 30%;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: 500ms ease;
+    transition: 500ms ease;
+  }
+  footer .toggle.active {
+    background: url(https://techgrounds.nl/wp-content/uploads/2022/05/TG-logo-300x60.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    min-width: 95%;
+    background-color: violet;
+    background-size: 40%;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  footer .klantenservice.toggle.active,
+  footer .winkels.toggle.active,
+  footer .ontdek.toggle.active {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .toggle.active::before,
+  footer .toggle.active::after {
+    content: '';
+    color: purple;
+    position: absolute;
+    opacity: 0.3;
+    top: -0.5rem;
+    left: -1rem;
+  }
+  footer .toggle.active::before {
+    top: -0.5rem;
+    left: -1rem;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  footer .toggle li {
+    display: none;
+    margin: 0 0;
+  }
+  footer .toggle h3 {
+    margin: 0 0;
+  }
+  footer .toggle.active li {
+    display: block;
+  }
+  footer .accordion-toggle {
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+  }
+  footer .accordion-toggle:focus {
+    outline: 0;
+  }
+  footer .accordion-toggle .fa-times {
+    display: none;
+  }
+  footer .toggle.active .accordion-toggle .fa-times {
+    color: purple;
+    display: block;
+  }
+  footer .toggle.active .accordion-toggle .fa-plus {
+    display: none;
+  }
+  footer .toggle.active .accordion-toggle {
+    color: white;
+    background-color: white;
+  }
 }
 
 .login {
@@ -824,90 +961,6 @@ main .container-pagination .page.active {
   main .container-pagination {
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
-  }
-  footer {
-    -webkit-transform: translateY(250px);
-            transform: translateY(250px);
-    margin: 0 auto;
-  }
-  footer .toggle {
-    background-color: transparent;
-    border: 1px solid purple;
-    border-radius: 10px;
-    margin: 20px 0;
-    padding: 30px;
-    position: relative;
-    overflow: hidden;
-    -webkit-transition: 500ms ease;
-    transition: 500ms ease;
-  }
-  footer .toggle.active {
-    background-color: #fff;
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  }
-  footer .toggle.active::before,
-  footer .toggle.active::after {
-    content: '';
-    color: purple;
-    position: absolute;
-    opacity: 0.3;
-    top: -0.5rem;
-    left: -1rem;
-  }
-  footer .toggle.active::before {
-    top: -0.5rem;
-    left: -1rem;
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-  }
-  footer .toggle li {
-    display: none;
-    margin: 0 0;
-  }
-  footer .toggle h3 {
-    margin: 0 0;
-  }
-  footer .toggle.active li {
-    display: block;
-  }
-  footer .accordion-toggle {
-    background-color: transparent;
-    border: 0;
-    border-radius: 50%;
-    cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 30px;
-    height: 30px;
-  }
-  footer .accordion-toggle:focus {
-    outline: 0;
-  }
-  footer .accordion-toggle .fa-times {
-    display: none;
-  }
-  footer .toggle.active .accordion-toggle .fa-times {
-    color: white;
-    display: block;
-  }
-  footer .toggle.active .accordion-toggle .fa-plus {
-    display: none;
-  }
-  footer .toggle.active .accordion-toggle {
-    color: white;
-    background-color: purple;
   }
 }
 /*# sourceMappingURL=style.css.map */
