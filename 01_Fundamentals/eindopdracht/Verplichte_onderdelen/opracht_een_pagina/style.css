@@ -524,6 +524,8 @@ footer {
   max-width: 1000px;
   margin-left: 20%;
   padding: 0.5rem;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
 }
 
 footer .accordion-toggle {
@@ -808,6 +810,11 @@ body {
   margin-right: auto;
 }
 
+main {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+
 .product-cards {
   position: relative;
   display: -webkit-box;
@@ -821,6 +828,8 @@ body {
           justify-content: center;
   margin: 0;
   max-width: 1000px;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .container-product {
@@ -889,8 +898,10 @@ body {
 
 .container-product .cent {
   font-size: 70%;
+  vertical-align: baseline;
   position: relative;
-  bottom: 0.3rem;
+  top: -0.20rem;
+  right: 0.4rem;
 }
 
 .container-pagination {

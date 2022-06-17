@@ -30,6 +30,10 @@ body {
     margin-right: auto;
 }
 
+main {
+    transform: translateY(100px);
+}
+
 .product-cards {
     position: relative;
     display: flex;
@@ -37,6 +41,8 @@ body {
     justify-content: center;
     margin: 0;
     max-width: 1000px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .container-product {
@@ -97,8 +103,14 @@ body {
 
     .cent {
         font-size: 70%;
+        vertical-align: baseline;
         position: relative;
-        bottom: 0.3rem;
+        top: -0.20rem;
+        right: 0.4rem;
+
+        // font-size: 70%;
+        // position: relative;
+        // bottom: 0.3rem;
     }
 }
 

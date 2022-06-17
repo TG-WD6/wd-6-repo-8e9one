@@ -13,25 +13,27 @@
 </head>
 
 <body>
-    <nav class="navigation">
-        <div class="logo">
-            <img src="https://techgrounds.nl/wp-content/uploads/2022/05/TG-logo-300x60.png" alt="techgrounds-logo">
-        </div>
-        <input type="checkbox" id="toggle-menu">
-        <label for="toggle-menu" class="container-navbar">
-            <div class="menu-button"></div>
-        </label>
-        <ul class="menu-bar">
-            <li><a href="#login-id"><i class="fa fa-home"></i>Home</a></li>
-            <li><a href="#product-id"><i class="fa fa-heart"></i>Popular</a></li>
-            <li><a href="#winkel-id"><i class="fa fa-envelope"></i>Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navigation">
+            <div class="logo">
+                <img src="https://techgrounds.nl/wp-content/uploads/2022/05/TG-logo-300x60.png" alt="techgrounds-logo">
+            </div>
+            <input type="checkbox" id="toggle-menu">
+            <label for="toggle-menu" class="container-navbar">
+                <div class="menu-button"></div>
+            </label>
+            <ul class="menu-bar">
+                <li><a href="#login-id"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#product-id"><i class="fa fa-heart"></i>Popular</a></li>
+                <li><a href="#winkel-id"><i class="fa fa-envelope"></i>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section class="login" id="login-id">
             <img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHNlY3VyaXR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                 alt="Login">
-            <div class="container">
+            <form class="container">
                 <h1>Login</h1>
                 <h2>Login with Your Email</h2>
                 <div class="input-tekst">
@@ -48,8 +50,8 @@
                         <a href="#">Forget Password?</a> <br>
                     </div>
                 </div>
-                <button class="login-button">LOGIN</button>
-            </div>
+                <input type="submit" value="LOGIN" class="login-button">
+            </form>
         </section>
         <section class="product-cards" id="product-id">
             <div class="container-product">
