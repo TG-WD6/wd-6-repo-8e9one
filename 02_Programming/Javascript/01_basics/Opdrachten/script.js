@@ -248,14 +248,23 @@
 // console.log(clubInfo)
 // console.log(clubClass)
 
-const group = ['bob', 'luis', 'benn', 'john']
-let inputData = document.getElementById('inputData');
+// const group = ['bob', 'luis', 'benn', 'john']
+// let inputData = document.getElementById('inputData');
 
-function parameterFunction() {
-    console.log(`this is your input ${inputData.value}.`)
-    if (group.includes(inputData.value) === true) {
-        console.log(`yes ${inputData.value} is in this group.`)
-    } else {
-        console.log(`no ${inputData.value} is not in this group.`)
-    }
+// function parameterFunction() {
+//     console.log(`this is your input ${inputData.value}.`)
+//     if (group.includes(inputData.value) === true) {
+//         console.log(`yes ${inputData.value} is in this group.`)
+//     } else {
+//         console.log(`no ${inputData.value} is not in this group.`)
+//     }
+// }
+
+let num = 5;
+
+function sumRange(num) {
+    if (num === 1) return 1;
+    return num + sumRange(num - 1);
 }
+
+console.log(sumRange(num));
