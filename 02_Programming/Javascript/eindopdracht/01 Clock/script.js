@@ -2,9 +2,17 @@ const handHours = document.querySelector('.hours')
 const handMinutes = document.querySelector('.minutes')
 const handSeconds = document.querySelector('.seconds')
 const clock = document.querySelector('.clock')
+// const select = document.getElementById('timeZones')
+// const value = select.options[select.selectedIndex].value
 
+function getTimeZone(timeZ) {
+    let val = timeZ.value;
+    console.log(val)
+    // return val
+}
+//get the timezone diff
 
-function setTime() {
+function setTime(val) {
     const time = new Date();
     // get date
     const hours = time.getHours();
@@ -23,15 +31,12 @@ function setTime() {
     // rotate seconds hand 360 deg depending on amount of hours
 }
 
+
 // https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
 // formula to turn hours/minutes/seconds to degrees
 const scale = (num, in_min, in_max, out_min, out_max) => {
     return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
-// console.log(`hours = ${hours} minutes = ${minutes} seconds = ${seconds} `)
-
-
 setTime()
 setInterval(setTime, 1000)
-
