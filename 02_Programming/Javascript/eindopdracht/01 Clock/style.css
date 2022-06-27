@@ -18,8 +18,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-color: black;
 }
+.dropDown {
+    position: relative;
+    top: -175px;
+}
+
+
 
 .clock {
     position: relative;
