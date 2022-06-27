@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&dissplay=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Muli", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.container {
+    height: 600px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60px;
+    width: 5px;
+    transform-origin: bottom center;
+    transition: all 0.5ss ease-in;
+}
+
+.hand.hours {
+    /* transform: translate(-50%, -100%) rotate(0deg); */
+    background-color: black;
+}
+.hand.minutes {
+    /* transform: translate(-50%, -100%) rotate(0deg); */
+    height: 95px;
+    background-color: black;
+}
+.hand.seconds {
+    /* transform: translate(-50%, -100%) rotate(0deg); */
+    height: 90px;
+    background-color: red;
+    width: 2px;
+}
