@@ -1,0 +1,205 @@
+@import 'components/button', 'components/images', 'base/_reset', 'layout/navigation', 'layout/footer', 'layout/forms', 'base/colors', 'base/typography';
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 250px;
+    max-width: 1000px;
+    font-family: $primary-font;
+
+    h1 {
+        font-size: $font-size-h1;
+    }
+
+    h2 {
+        font-size: $font-size-h2;
+    }
+
+    h3 {
+        font-size: $font-size-h3;
+    }
+
+    small {
+        font-size: $font-size-small;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    transform: translateY(100px);
+}
+
+.product-cards {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    max-width: 1000px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.container-product {
+    position: relative;
+    min-width: 720px;
+
+
+    .product {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .product>*:nth-child(1) {
+        // flex: 1 1 25%;
+        min-width: 10.3125em;
+    }
+
+    .product>*:nth-child(2) {
+        flex: 1 1 50%;
+    }
+
+    .product>*:nth-child(3) {
+        flex: 1 1 25%;
+
+    }
+
+
+    .afbeelding-product {
+        height: $image-height;
+        width: $image-width;
+    }
+
+    .product-beschrijving {
+        margin: 0 2.5em;
+        padding: 2.5em 0;
+    }
+
+    .winkel-wagen {
+        display: flex;
+        flex-direction: column;
+        padding: 2.5em 0;
+    }
+
+    .winkel-wagen span,
+    .winkel-wagen div {
+        margin: 0.3125em;
+    }
+
+    .est-bezorg-tijd {
+        color: $quaternary-color;
+    }
+
+    .prijs {
+        color: $quinary-color;
+        font-weight: 1000;
+    }
+
+    .cent {
+        font-size: 70%;
+        vertical-align: baseline;
+        position: relative;
+        top: -0.20rem;
+        right: 0.4rem;
+
+        // font-size: 70%;
+        // position: relative;
+        // bottom: 0.3rem;
+    }
+}
+
+.container-pagination {
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+
+    .page {
+        color: $primary-color;
+        padding: 1rem 2rem;
+        margin: 2rem 0 1rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.active {
+            border: 1px solid $tertiary-color;
+        }
+
+    }
+}
+
+
+
+
+@media (max-width: 700px) {
+
+
+    main {
+        transform: translateY(150px);
+
+        .login {
+            margin-bottom: 200px;
+        }
+
+        .container-product {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0 auto;
+
+            .afbeelding-product {
+                height: $image-height;
+                width: $image-width;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #product-een,
+            #product-twee,
+            #product-drie {
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+                justify-content: center;
+
+                &.afbeelding-product {
+                    height: $image-height;
+                    width: $image-width;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            // .product>* {
+            //     flex: 1 1;
+            // }
+
+            .product-beschrijving {
+                margin: 1em;
+                padding: 0 2.5em;
+            }
+
+            .winkel-wagen {
+                display: flex;
+                flex-direction: column;
+                padding: 0 2.5em;
+                margin: 1em;
+            }
+        }
+
+        .container-pagination {
+            transform: scale(0.75);
+        }
+    }
+}
