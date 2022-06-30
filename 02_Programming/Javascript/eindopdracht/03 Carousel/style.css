@@ -61,9 +61,11 @@ body {
   height: 100%;
   width: 500%;
   flex-shrink: 0;
-  transition: all 0.5s;
+  transition: all 2s;
 }
 .container__slider div {
+  background-color: blue;
+  color: white;
   flex-basis: 20%;
   width: 20%;
   flex-shrink: 0;
