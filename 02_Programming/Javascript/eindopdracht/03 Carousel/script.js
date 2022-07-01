@@ -7,10 +7,10 @@ const prev = document.querySelector('.container__prev');
 let direction = -1;
 
 next.addEventListener('click', function () {
-    if (direction = 1) {
+    if (direction === 1) {
         direction = -1;
     }
-    // slider.prepend(slider.lastElementChild);
+    slider.prepend(slider.lastElementChild);
     carousel.style.justifyContent = 'flex-start';
     slider.style.transform = 'translate(-20%)';
 
