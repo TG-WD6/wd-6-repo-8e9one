@@ -82,12 +82,33 @@ const getPokemon = async (id) => {
     const res = await fetch(url)
     const data = await res.json()
     createPokemonInfo(data)
+    // console.log(data.types[1])
 }
+
+
+
 
 const createPokemonInfo = (pokemon) => {
     const pokemonEl = document.createElement('div')
     pokemonEl.classList.add('pokemon-container__pokemon')
 
+    //NAME 
+    const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
+
+    //NUMBER
+    const number = pokemon.id.toString().padStart(3, '0')
+
+    // TYPES FOR INFO CARD
+    const pokemonTypes = pokemon.types.map(type => type.type.name)
+    console.log(pokemonTypes)
+
+    // STATS FOR INFO CARD
+    const hp = pokemon.stats[0].base_stat;
+    const atk = pokemon.stats[1].base_stat;
+    const def = pokemon.stats[2].base_stat;
+    const speed = pokemon.stats[5].base_stat;
+    const spAtk = pokemon.stats[3].base_stat;
+    const spDef = pokemon.stats[4].base_stat;
 
     const pokemonInnerHTML = `<div class="pokemon-container__pokemon-img">
     <img src=https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png alt="">
@@ -95,38 +116,38 @@ const createPokemonInfo = (pokemon) => {
     <div class="pokemon-container__pokemon-info">
         <div class="pokemon-container__primary-info">
             <div>
-                <h3 class="pokemon-container__name">${pokemon.name}</h3>
+                <h3 class="pokemon-container__name">${name}</h3>
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png"
                 alt="">
-                <span class="pokemon-container__number"># ${pokemon.id}</span>
+                <span class="pokemon-container__number"># ${number}</span>
             </div>
             <div class="pokemon-container__types">
-            <span class="pokemon-container__first-type">grass</span>
-            <span class="pokemon-container__second-type"> poison</span>
+            <span class="pokemon-container__first-type">${pokemonTypes[0]}</span>
+            <span class="pokemon-container__second-type">${pokemonTypes[1]}</span>
         </div>
     </div>
     <div class="pokemon-container__secondary-info">
         <div>
-            <div class="hp">HP: 60</div>
-            <div class="atk">ATK: 62</div>
-            <div class="def">DEF: 63</div>
+            <div class="hp">HP: ${hp}</div>
+            <div class="atk">ATK: ${atk}</div>
+            <div class="def">DEF: ${def}</div>
         </div>
         <div>
-            <div class="speed">SPEED: 60</div>
-            <div class="sp-atk">SP.ATK: 80</div>
-            <div class="sp-def">SP.DEF: 80</div>
+            <div class="speed">SPEED: ${speed}</div>
+            <div class="sp-atk">SP.ATK: ${spAtk}</div>
+            <div class="sp-def">SP.DEF: ${spDef}</div>
         </div>
     </div>
     </div>`
-    console.log(pokemon.types)
+    // console.log(pokemon.types)
     pokemonEl.innerHTML = pokemonInnerHTML
 
     pokemonContainer.appendChild(pokemonEl)
 }
 
 
-fetchGen1()
-// fetchGen2()
+// fetchGen1()
+fetchGen2()
 // fetchGen3()
 // fetchGen4()
 // fetchGen5()
@@ -134,3 +155,12 @@ fetchGen1()
 // fetchGen7()
 // fetchGen8()
 
+const fitBitData = {
+    totalSteps: 308727,
+    totalMiles: 211.7,
+    avgCaloriesBurn: 5755,
+    workoutsThisWeek: '5 of 7',
+    avgGoodSleep: '2:13'
+};
+
+fitBitData[totalSteps]
