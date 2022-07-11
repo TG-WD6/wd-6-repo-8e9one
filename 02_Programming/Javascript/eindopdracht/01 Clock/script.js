@@ -2,17 +2,41 @@ const handHours = document.querySelector('.hours')
 const handMinutes = document.querySelector('.minutes')
 const handSeconds = document.querySelector('.seconds')
 const clock = document.querySelector('.clock')
-// const select = document.getElementById('timeZones')
-// const value = select.options[select.selectedIndex].value
+const select = document.getElementById('timeZones').addEventListener('change', function () {
+    console.log(this.value)
+    return this.value;
+});
 
-function getTimeZone(timeZ) {
-    let val = timeZ.value;
-    console.log(val)
-    // return val
-}
+// function getTimeZone(timeZ) {
+//     let value = timeZ.value;
+//     let valueInt = parseInt(value)
+//     console.log(value);
+//     console.log(typeof value)
+//     console.log(typeof valueInt)
+//     return valueInt;
+
+
+
+//     // let val = timeZ.value;
+
+//     // // let val = timeZ.value;
+//     // let valInt = parseInt(val);
+//     // // console.log(valInt)
+//     // // return val
+//     // return valInt;
+// }
+
+// console.log(valueInt)
+// const timeZoneChange = getTimeZone()
+
+
+
 //get the timezone diff
 
-function setTime(val) {
+
+
+function setTime() {
+    // getTimeZone()
     const time = new Date();
     // get date
     const hours = time.getHours();
@@ -29,6 +53,7 @@ function setTime(val) {
     // rotate minutes hand 360 deg depending on amount of minutes
     handSeconds.style.transform = `translate(-50%, -100%) rotate(${scale(seconds, 0, 59, 0, 360)}deg)`
     // rotate seconds hand 360 deg depending on amount of hours
+
 }
 
 

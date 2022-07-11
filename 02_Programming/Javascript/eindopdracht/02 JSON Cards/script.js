@@ -85,14 +85,12 @@ const getPokemon = async (id) => {
     // console.log(data.types[1])
 }
 
-
-
-
 const createPokemonInfo = (pokemon) => {
     const pokemonEl = document.createElement('div')
     pokemonEl.classList.add('pokemon-container__pokemon')
 
     //NAME 
+    // https://pokeapi.co/
     const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
 
     //NUMBER
@@ -103,6 +101,7 @@ const createPokemonInfo = (pokemon) => {
     console.log(pokemonTypes)
 
     // STATS FOR INFO CARD
+    // https://pokeapi.co/docs/v2#stats
     const hp = pokemon.stats[0].base_stat;
     const atk = pokemon.stats[1].base_stat;
     const def = pokemon.stats[2].base_stat;
@@ -139,7 +138,10 @@ const createPokemonInfo = (pokemon) => {
         </div>
     </div>
     </div>`
-    // console.log(pokemon.types)
+
+    if (pokemonTypes === undefined) {
+        document.classList.remove('pokemon-container__second-type')
+    }
     pokemonEl.innerHTML = pokemonInnerHTML
 
     pokemonContainer.appendChild(pokemonEl)
@@ -155,12 +157,3 @@ fetchGen2()
 // fetchGen7()
 // fetchGen8()
 
-const fitBitData = {
-    totalSteps: 308727,
-    totalMiles: 211.7,
-    avgCaloriesBurn: 5755,
-    workoutsThisWeek: '5 of 7',
-    avgGoodSleep: '2:13'
-};
-
-fitBitData[totalSteps]
