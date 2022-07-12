@@ -1,44 +1,39 @@
 const slider = document.querySelector('.container__slider');
 const carousel = document.querySelector('.container__carousel');
+const carouselImg = document.querySelectorAll('.container__slider img');
 
 const next = document.querySelector('.container__next');
 const prev = document.querySelector('.container__prev');
 
-let direction = -1;
+let direction = 1;
+const size = carouselImg[0].clientWidth;
+
+slider.style.transform = `translateX(${-size * direction}px)`;
+
 
 next.addEventListener('click', function () {
-    if (direction === 1) {
-        direction = -1;
-    }
-    slider.prepend(slider.lastElementChild);
-    carousel.style.justifyContent = 'flex-start';
-    slider.style.transform = 'translate(-20%)';
-
-    console.log(direction)
+    slider.style.transition = 'transform 0.4s ease-in-out';
+    direction++;
+    slider.style.transform = `translateX(${-size * direction}px)`;
 });
 
 prev.addEventListener('click', function () {
-    if (direction === -1) {
-        direction = 1;
-        slider.appendChild(slider.firstElementChild);
-    }
-    carousel.style.justifyContent = 'flex-end';
-    slider.style.transform = 'translate(20%)';
-
-
-    console.log(direction)
+    slider.style.transition = 'transform 0.4s ease-in-out';
+    direction--;
+    slider.style.transform = `translateX(${-size * direction}px)`;
 });
 
 slider.addEventListener('transitionend', function () {
-    if (direction === 1) {
-        slider.prepend(slider.lastElementChild);
-    } else {
-        slider.appendChild(slider.firstElementChild);
+    if (carouselImg[direction].id === 'cloneLast') {
+        slider.style.transition = 'none';
+        direction = carouselImg.length - 2;
+        slider.style.transform = `translateX(${-size * direction}px)`;
     }
 
-    slider.style.transition = 'none';
-    slider.style.transform = 'translate(0)';
-    setTimeout(function () {
-        slider.style.transition = 'all 2s';
-    })
+    if (carouselImg[direction].id === 'cloneFirst') {
+        slider.style.transition = 'none';
+        direction = carouselImg.length - direction;
+        slider.style.transform = `translateX(${-size * direction}px)`;
+    }
+
 });
